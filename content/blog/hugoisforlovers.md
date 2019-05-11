@@ -1,6 +1,6 @@
 +++
 author = "Hugo author"
-categories = ["Hugo"]
+categories = ["Test"]
 date = "2014-04-02"
 description = ""
 featured = "pic01.jpg"
@@ -72,7 +72,7 @@ are located at the same relative location as the url, in our case
 Change and save this file.. Notice what happened in your terminal.
 
     > Change detected, rebuilding site
-
+    
     > 29 pages created
     > 0 tags index created
     > in 26 ms
