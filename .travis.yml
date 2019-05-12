@@ -1,0 +1,19 @@
+language: go
+go:
+  - "1.12.4"
+install:
+  - go get github.com/gohugoio/hugo
+script:
+  - hugo
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  local_dir: public
+  repo: cube219/cube219.github.io
+  target-branch: master
+  committer-from-gh: true
+  on:
+    branch:master
+    
