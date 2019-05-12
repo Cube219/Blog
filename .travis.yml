@@ -1,10 +1,19 @@
 language: go
 go:
   - "1.12.4"
+
 install:
   - go get github.com/gohugoio/hugo
+
+git:
+  depth: 1
+
+notifications:
+  email: false
+
 script:
   - hugo
+
 deploy:
   provider: pages
   skip_cleanup: true
