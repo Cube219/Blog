@@ -4,7 +4,7 @@ title = "Cube219's Blog"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 4
-disqusShortname = "shortname"
+disqusShortname = "cube219"
 googleAnalytics = ""
 pluralizeListTitles = false
 # Set the followings to true as part of your site SEO
