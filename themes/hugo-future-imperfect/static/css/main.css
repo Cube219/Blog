@@ -1348,7 +1348,8 @@
 			border-bottom-color: transparent;
     }
 
-      #content p a:hover {
+      #content p a:hover,
+      #content ul li a:hover {
 				border-bottom-color: inherit;
 				color: rgb(0, 86, 161) !important;
       }
@@ -1366,7 +1367,7 @@
 		#content h6 {
 			letter-spacing: normal;
 			text-transform: none;
-			margin: 0 0 0.5em;
+			margin: 0.4em 0 0.2em;
 		}
 		#content h1 {
 			font-size: 2.5em;
@@ -2144,9 +2145,10 @@
   .fancybox {
     max-width: 85%;
     width: fit-content;
-    /* padding: .5em; */
+    padding: .5em;
     /* background: #ddd; */
     margin: auto;
+    margin-bottom: 1em;
   }
 
       .fancybox a {
