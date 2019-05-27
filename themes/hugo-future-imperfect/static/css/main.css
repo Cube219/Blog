@@ -155,10 +155,10 @@
 		}
 
 	a {
-		-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		transition: color 0.2s ease, border-bottom-color 0.2s ease;
+		-moz-transition: all 0.2s ease, border-bottom-color 0.2s ease;
+		-webkit-transition: all 0.2s ease, border-bottom-color 0.2s ease;
+		-ms-transition: all 0.2s ease, border-bottom-color 0.2s ease;
+		transition: all 0.2s ease, border-bottom-color 0.2s ease;
 		border-bottom: dotted 1px rgba(160, 160, 160, 0.65);
 		color: inherit;
 		text-decoration: none;
@@ -203,14 +203,14 @@
 		text-transform: uppercase;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
-			border-bottom: 0;
-		}
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		color: inherit;
+		border-bottom: 0;
+	}
 
-    h1 {
-        font-size: 1.3em;
-    }
+	h1 {
+		font-size: 1.3em;
+	}
 
 	h2 {
 		font-size: 1.1em;
@@ -247,8 +247,8 @@
 	blockquote {
 		border-left: solid 4px rgba(160, 160, 160, 0.3);
 		font-style: italic;
-		margin: 0 0 2em 0;
-		padding: 0.5em 0 0.5em 2em;
+		margin: 0 0 20px;
+		padding: 10px 20px;
 	}
 
 		blockquote p {
@@ -1339,22 +1339,59 @@
 
 		#content img {
         max-width: 100%;
-    }
-
-    #content p a,
+		}
+		
+		#content p a,
 		#content ul li a {
-        border-bottom: dotted 2px rgba(160,160,160,.65);
+			color: rgb(0, 138, 255);
+			border-bottom: solid 1px;
+			border-bottom-color: transparent;
     }
 
-        #content p a:hover {
-            border-bottom-color: transparent;
-        }
+      #content p a:hover {
+				border-bottom-color: inherit;
+				color: rgb(0, 86, 161) !important;
+      }
 
-    #content blockquote,
-		#content p,
+		#content > p,
 		#content ul{
-        margin: 1em 0;
-    }
+        margin: 0.5em 0;
+		}
+		
+		#content h1,
+		#content h2,
+		#content h3,
+		#content h4,
+		#content h5,
+		#content h6 {
+			letter-spacing: normal;
+			text-transform: none;
+			margin: 0 0 0.5em;
+		}
+		#content h1 {
+			font-size: 2.5em;
+		}
+		#content h2 {
+			font-size: 1.9em;
+		}
+		#content h3 {
+			font-size: 1.5em;
+		}
+		#content h4 {
+			font-size: 1.3em;
+		}
+		#content h5 {
+			font-size: 1.1em;
+		}
+		#content h6 {
+			font-size: 1.1em;
+		}
+		#content hr {
+			margin: 1em 0;
+		}
+		#content pre {
+			margin: 0 0 1em;
+		}
 
 		.post > .image.featured {
 			overflow: hidden;

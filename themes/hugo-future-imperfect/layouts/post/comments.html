@@ -1,4 +1,4 @@
-{{ if ne .Site.DisqusShortname "" }}
+<!-- {{ if ne .Site.DisqusShortname "" }}
     <article class="post">
         {{ template "_internal/disqus.html" . }}
     </article>
@@ -6,4 +6,12 @@
     <article class="post">
       {{ .Render "staticman" }}
     </article>
-{{ end }}
+{{ end }} -->
+
+<script src="https://utteranc.es/client.js"
+        repo="Cube219/Cube219.github.io"
+        issue-term="Comments: {{ .Title }}"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

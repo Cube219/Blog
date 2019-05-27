@@ -72,7 +72,8 @@
   {{ $highTheme := .Site.Params.highlightjsTheme }}
     {{ with .Site.Params.highlightjsVersion }}
     <!-- <link href='{{ $.Site.Params.highlightjsCDN | default "//cdn.bootcss.com" }}/highlight.js/{{ . }}/styles/{{ $highTheme }}.min.css' rel='stylesheet' type='text/css' /> -->
-    <link href='css/highlight/{{ $highTheme }}.css' rel='stylesheet' type='text/css' />
+    <!-- <link href='css/highlight/{{ $highTheme }}.css' rel='stylesheet' type='text/css' /> -->
+    <link rel="stylesheet" href="{{ "css/highlight/vs2015.css" | relURL }}">
   {{ end }}
 {{ end }}
 

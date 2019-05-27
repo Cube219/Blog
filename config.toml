@@ -65,7 +65,7 @@ canonifyURLs = true
   highlightjsVersion = "9.11.0"
   highlightjsCDN = "//cdn.bootcss.com"
   highlightjsLang = ["r", "yaml", "css", "go"]
-  highlightjsTheme = "vs2015"
+  # highlightjsTheme = "vs2015" -> header.html에서 설정
   MathJaxCDN = "//cdn.bootcss.com"
   MathJaxVersion = "2.7.1"
 
