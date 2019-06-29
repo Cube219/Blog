@@ -46,17 +46,17 @@ type = "post"
 
 그리고 [utterances 홈페이지](https://utteranc.es/)로 가서 설정을 하면 된다.
 
-![config-repo.png](/img/utterances로 블로그 댓글 적용하기/config-repo.png)
+![config-repo.png](images/config-repo.png)
 
 Repository에서는 아까 준비한 저장소 이름을 넣으면 된다.
 
-![config-repo.png](/img/utterances로 블로그 댓글 적용하기/config-issue-mapping.png)
+![config-repo.png](images/config-issue-mapping.png)
 
 블로그 글과 Issue를 어떻게 mapping할 것인지 정하는 설정이다. 보통은 pathname이나 title을 써도 잘 작동을 하나, 필자의 블로그는 그럴수가 없었다.
 
 필자의 블로그의 처음 화면은 가장 최근에 쓴 글을 띄우게 되어있다. 그래서 mapping을 pathname이나 title로 하게 될 경우, 처음 화면에서 댓글을 달면 기존의 issue가 아닌 새로운 issue에 써지게 된다.
 
-![comment-in-main-page.png](/img/utterances로 블로그 댓글 적용하기/comment-in-main-page.png)
+![comment-in-main-page.png](images/comment-in-main-page.png)
 
 처음 화면의 pathname은 /이기 때문에 해당 글의 제목이 아닌 index로 issue가 생성되어 버리고, 연결도 엉뚱하게 된다.
 
@@ -76,8 +76,8 @@ Repository에서는 아까 준비한 저장소 이름을 넣으면 된다.
 
 > Issue mapping에서 **Specific issue number**나 **Issue title contains specific term**을 선택할 경우 **issue-term**이 **[ENTER TERM HERE]**나 **[ENTER ISSUE NUMBER HERE]**라고 나올텐데, 이는 수동으로 mapping을 해야 하는 경우이므로 사용자가 저 위치에다가 페이지마다 알맞은 값을 넣어야 한다.
 
-![test-comment.png](/img/utterances로 블로그 댓글 적용하기/test-comment.png)
+![test-comment.png](images/test-comment.png)
 
-![comment-in-issue.png](/img/utterances로 블로그 댓글 적용하기/comment-in-issue.png)
+![comment-in-issue.png](images/comment-in-issue.png)
 
 적용 후 이 글에 댓글을 달아보았다. 댓글을 달면 자동으로 GitHub issue를 생성해서 댓글을 다는 것을 볼 수 있다.
