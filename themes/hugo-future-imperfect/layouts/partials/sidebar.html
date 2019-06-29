@@ -90,7 +90,6 @@
         {{ end }}
 
         {{ range $key, $value := $.Scratch.Get "categories" }}
-        <p>
           <article>
             <header>
               {{ if ne $value.Name "" }}
@@ -102,7 +101,7 @@
               {{ end }}
             </header>
           </article>
-        </p>
+          <p></p>
         {{ end }}
     </section>
   {{ end }}

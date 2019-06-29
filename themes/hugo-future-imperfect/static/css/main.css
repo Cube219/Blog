@@ -209,19 +209,19 @@
 	}
 
 	h1 {
-		font-size: 1.3em;
+		font-size: 1.5em;
 	}
 
 	h2 {
-		font-size: 1.1em;
+		font-size: 1.3em;
 	}
 
 	h3 {
-		font-size: 0.9em;
+		font-size: 1.1em;
 	}
 
 	h4 {
-		font-size: 0.7em;
+		font-size: 0.9em;
 	}
 
 	h5 {
@@ -323,7 +323,7 @@
 		justify-content: flex-end;
 		border-bottom: 0;
 		font-family: "Raleway", Helvetica, sans-serif;
-		font-size: 0.6em;
+		font-size: 0.8em;
 		font-weight: 400;
 		letter-spacing: 0.25em;
 		text-transform: uppercase;
@@ -390,7 +390,7 @@
 		cursor: pointer;
 		display: inline-block;
 		font-family: "Raleway", Helvetica, sans-serif;
-		font-size: 0.6em;
+		font-size: 0.7em;
 		font-weight: 800;
 		height: 4.8125em;
 		letter-spacing: 0.25em;
@@ -458,7 +458,7 @@
 		input[type="reset"].big,
 		input[type="button"].big,
 		.button.big {
-			font-size: 0.7em;
+			font-size: 0.85em;
 			padding: 0 3em;
 		}
 
@@ -877,6 +877,7 @@
 			ul.icons li {
 				display: inline-block;
 				padding: 0 1em 0 0;
+				font-size: 1.3em;
 			}
 
 				ul.icons li:last-child {
@@ -923,7 +924,8 @@
 	        height: auto;
 	        white-space: normal;
 	        padding-top: 1em;
-	        padding-bottom: 1em;
+					padding-bottom: 1em;
+					text-transform: none;
 			}
 
 			ul.actions.pagination .next {
@@ -1200,13 +1202,15 @@
 		}
 
 			.mini-post header h3 {
-				font-size: 0.7em;
+				font-size: 0.9em;
+				letter-spacing: 2px;
+				text-transform: none;
 			}
 
 			.mini-post header .published {
 				display: block;
 				font-family: "Raleway", Helvetica, sans-serif;
-				font-size: 0.6em;
+				font-size: 0.7em;
 				font-weight: 400;
 				letter-spacing: 0.25em;
 				margin: -0.625em 0 1.7em 0;
@@ -1293,17 +1297,21 @@
 				-ms-flex-grow: 1;
 				flex-grow: 1;
 				-ms-flex: 1;
-				padding: 3.75em 3em 3.3em 3em;
+				padding: 3em 3em 1.3em 3em;
 			}
 
 				.post > header .title h1 {
-						font-weight: 900;
-						font-size: 1.5em;
+					font-weight: 900;
+					font-size: 2.2em;
+					letter-spacing: 4px;
+					text-transform: none;
 				}
 
 				.post > header .title h2 {
 					font-weight: 900;
-					font-size: 1.5em;
+					font-size: 2.2em;
+					letter-spacing: 4px;
+					text-transform: none;
 				}
 
 				.post > header .title > :last-child {
@@ -1311,7 +1319,7 @@
 				}
 
 			.post > header .meta {
-				padding: 3.75em 3em 1.75em 3em ;
+				padding: 3em 3em 1.75em 3em ;
 				border-left: solid 1px rgba(160, 160, 160, 0.3);
 				min-width: 17em;
 				text-align: right;
@@ -1330,7 +1338,7 @@
 					color: #3c3b3b;
 					display: block;
 					font-family: "Raleway", Helvetica, sans-serif;
-					font-size: 0.7em;
+					/* font-size: 0.7em; */
 					font-weight: 800;
 					letter-spacing: 0.25em;
 					margin-top: 0.5em;
@@ -1450,7 +1458,7 @@
 					border-left: solid 1px rgba(160, 160, 160, 0.3);
 					display: inline-block;
 					font-family: "Raleway", Helvetica, sans-serif;
-					font-size: 0.6em;
+					font-size: 0.8em;
 					font-weight: 400;
 					letter-spacing: 0.25em;
 					line-height: 1;
@@ -2651,7 +2659,7 @@
 		}
 
 		#intro header p {
-			font-size: 0.8em;
+			font-size: 0.9em;
 		}
 
 	@media screen and (max-width: 980px) {
@@ -2857,8 +2865,8 @@
 
 
 	  #social-share .share-btn {
-	    padding: 0.5em;
-	    width: 4em;
+	    padding: 0.2em;
+	    width: 3em;
 	  }
 
 	    #social-share-nav .share-btn h3{

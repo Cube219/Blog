@@ -1,5 +1,5 @@
 +++
-title = "About Cube219"
+title = "ABOUT CUBE219"
 date = "2019-05-27"
 
 +++
