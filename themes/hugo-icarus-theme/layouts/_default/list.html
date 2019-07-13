@@ -1,0 +1,12 @@
+{{ define "main" }}
+    {{ $context := . }}
+    
+    {{ with .Content }}
+        {{ partial "single_article.html" $context }}
+    {{ else }}
+        <div class="archive-category-wrap">
+            <span class="archive-category">{{ .Title }}</span>
+        </div>
+        {{ partial "article_list.html" $context }}
+    {{ end }}
+{{ end }}

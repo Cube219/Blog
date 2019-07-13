@@ -1,7 +1,8 @@
 +++
-title = "ABOUT CUBE219"
+title = "About Cube219"
 date = "2019-05-27"
-
+menu = "main"
+disable_comments = true
 +++
 
 게임 개발자 (특히 게임 엔진/그래픽스쪽)가 되고 싶은 사람입니다.
