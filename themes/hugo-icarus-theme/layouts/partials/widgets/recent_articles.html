@@ -9,10 +9,13 @@
             <li>
                 <div class="item-thumbnail">
                     <a href="{{ .Permalink }}" class="thumbnail">
+                    {{ $pageTitle := .Title }}
                     {{ if and (isset .Params "banner") (not (eq .Params.banner "")) }}
-                        <span style="background-image:url({{ .Params.banner | absURL }})" alt="{{ $.Title }}" class="thumbnail-image"></span>
+                        {{ range .Resources.Match .Params.banner }}
+                            <span style="background-image:url({{ .Permalink | absURL }})" alt="{{ $pageTitle }}" class="thumbnail-image"></span>
+                        {{ end }}
                     {{else}}
-                        <span class="thumbnail-image thumbnail-none"></span>
+                        <span class="thumbnail-image thumbnail-none" alt="{{ $pageTitle }}"></span>
                     {{ end }}
                     </a>
                 </div>

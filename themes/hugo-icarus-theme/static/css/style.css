@@ -828,7 +828,8 @@ code {
 }
 .article-banner {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 .article-header {
   padding: 20px 20px 0;
@@ -836,6 +837,9 @@ code {
 .article-header .article-title {
   display: block;
   margin-bottom: 14px;
+}
+.article-header h1 {
+  margin-top: 0px;
 }
 .article-title {
   font-size: 2em;

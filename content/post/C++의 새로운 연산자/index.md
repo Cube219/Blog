@@ -1,5 +1,5 @@
 +++
-banner = ""
+banner = "images/cover.png"
 categories = ["C++", "2019"]
 date = "2019-06-27"
 description = ""
