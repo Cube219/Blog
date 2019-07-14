@@ -238,7 +238,8 @@ code {
 #comments,
 .archive-article,
 .timeline-row .content,
-#toTop {
+#toTop,
+.archive-category-wrap {
   background: #fff;
   /* -webkit-box-shadow: 0 4px 10px rgba(0,0,0,0.05); */
   /* box-shadow: 0 4px 10px rgba(0,0,0,0.05); */
@@ -398,7 +399,7 @@ code {
   font-weight: 600;
   padding-top: 10px;
   padding-bottom: 10px;
-  letter-spacing: 3.5px;
+  letter-spacing: 0.5px;
 }
 #header-title {
   text-align: center;
@@ -1384,7 +1385,8 @@ ol.toc {
 .archive-tag-wrap,
 .layout-title {
   font-size: 1.4em;
-  margin: 40px 0 20px 0;
+  margin: 20px 0px;
+  padding: 20px;
 }
 @media screen and (max-width: 559px) {
   .archive-year-wrap,

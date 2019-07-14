@@ -1,6 +1,6 @@
 +++
 title = "About Cube219"
-date = "2019-05-27"
+date = "2019-06-30"
 menu = "main"
 disable_comments = true
 +++
@@ -19,16 +19,19 @@ disable_comments = true
 * (2012) 제 29회 한국정보올림피아드(KOI) 전국대회 은상
 * (2016.07 ~ 2016.12) [SW마에스트로](https://swm.recruiter.co.kr/) 7기 연수생(1단계)
 * (2016.12.09 ~ 12.11) [대한민국 게임젬 2016](https://www.facebook.com/kgamejam) 참여
-* 어떤 대회?
 
 ## 프로젝트
 
-* [CubeEngine](https://github.com/Cube219/CubeEngine)
+* [CubeEngine](https://github.com/Cube219/CubeEngine) (진행중)
   * 모듈화를 지향하는 게임 엔진
   * 물리, 소리 등 주요 기능들을 모듈화 하고, 쉽게 붙혔다 땠다 할 수 있음
   * Vulkan(링크)기반으로 개발중이며, 차후 다른 그래픽스 API도 지원 예정
   * 그래픽스 / 게임엔진을 공부하기 위해 진행하는 프로젝트
-* [BlockBuster](https://github.com/Cube219/BlockBuster)
+* [WebPageAlerter](https://github.com/Cube219/BlockBuster) (진행중)
+  * 등록한 웹 사이트에 새로운 글이 올라오면 저장하고 알려주는 서비스
+  * 자주 보는 사이트들의 글들을 한번에 모아서 보기 위해 만듬
+  * 백엔드는 Node.js+TypeScript, 프론트엔드는 아직 미정
+* [BlockBuster](https://github.com/Cube219/BlockBuster) (완료)
   * SW마에스트로 과제로 만들었던 벽돌 깨기
   * 클라이언트는 Unity3d(링크), 서버는 Node.js(링크) 기반으로 제작
 
@@ -59,7 +62,7 @@ disable_comments = true
 * C#
 * Node.js
 * Vue.js
-* TypeScript(해보고 싶은 것)
+* TypeScript
 * Go
 * python
 

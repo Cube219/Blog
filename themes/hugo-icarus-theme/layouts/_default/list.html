@@ -5,7 +5,7 @@
         {{ partial "single_article.html" $context }}
     {{ else }}
         <div class="archive-category-wrap">
-            <span class="archive-category">{{ .Title }}</span>
+            <span class="archive-category">카테고리: {{ .Title }}</span>
         </div>
         {{ partial "article_list.html" $context }}
     {{ end }}
