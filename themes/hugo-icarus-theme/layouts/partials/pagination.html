@@ -1,4 +1,4 @@
-<nav id="page-nav">
+<!-- <nav id="page-nav">
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
     {{ if .Paginator.HasPrev }}
         <a class="extend prev" rel="prev" href="{{ .Paginator.Prev.URL | absURL }}">
@@ -11,4 +11,88 @@
         </a>
     {{ end }}
 {{ end }}
+</nav> -->
+{{ $paginator := .Paginate (where .Data.Pages "Section" "in" .Site.Params.mainSections) }}
+
+{{ $adjustNum := 3 }}
+
+<nav id="page-nav">
+    <ul class="pagination">
+        {{ $lowerPageNum := sub $paginator.PageNumber $adjustNum }}
+        {{ $upperPageNum := add $paginator.PageNumber $adjustNum }}
+
+        {{ if lt $lowerPageNum 1 }}
+            {{ $upperPageNum = sub $upperPageNum (sub $lowerPageNum 1) }}
+            {{ $lowerPageNum = 1 }}
+        {{ end }}
+
+        {{ if gt $upperPageNum $paginator.TotalPages }}
+            {{ $lowerPageNum = sub $lowerPageNum (sub $upperPageNum $paginator.TotalPages) }}
+            {{ $upperPageNum = $paginator.TotalPages }}
+
+            {{ if lt $lowerPageNum 1 }}
+                {{ $lowerPageNum = 1 }}
+            {{ end }}
+        {{ end }}
+
+        <!-- Prev Page -->
+        {{ if $paginator.HasPrev }}
+            <li class="waves-effect">
+                <a class="extend prev" rel="prev" href="{{ $paginator.Prev.URL | absURL }}">
+                    <i class="material-icons">chevron_left</i>
+                </a>
+            </li>
+        {{ else }}
+            <li class="disabled">
+                <a><i class="material-icons">chevron_left</i></a>
+            </li>
+        {{ end }}
+
+        <!-- First Page -->
+        {{ if ne $lowerPageNum 1 }}
+            <li class="waves-effect">
+                <a href="{{ $paginator.First.URL }}">
+                    1
+                </a>
+            </li>
+            <li><i class="material-icons">more_horiz</i></li> 
+        {{ end }}
+
+        <!-- Page Numbers -->
+        {{ range $paginator.Pagers }}
+            {{ if and (ge .PageNumber $lowerPageNum) (le .PageNumber $upperPageNum) }}
+                <li class="waves-effect light-blue {{ if eq $paginator.PageNumber .PageNumber }} active {{ end }}">
+                    <a href="{{ .URL }}">
+                        {{ .PageNumber }}
+                    </a>
+                </li>
+            {{ end }}
+        {{ end }}
+
+        <!-- Last Page -->
+        {{ if ne $upperPageNum $paginator.TotalPages }}
+            <li><i class="material-icons">more_horiz</i></li>
+            <li class="waves-effect">
+                <a href="{{ $paginator.Last.URL }}">
+                    {{ $paginator.TotalPages }}
+                </a>
+            </li>
+        {{ end }}
+
+        <!-- Next Page -->
+        {{ if $paginator.HasNext }}
+            <li class="waves-effect">
+                <a class="extend next" rel="next" href="{{ $paginator.Next.URL | absURL }}">
+                    <i class="material-icons">chevron_right</i>
+                </a>
+            </li>
+        {{ else }}
+            <li class="disabled">
+                <a><i class="material-icons">chevron_right</i></a>
+            </li>
+        {{ end }}
+
+        <!-- Last Page -->
+
+    </ul>
 </nav>

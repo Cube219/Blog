@@ -8,6 +8,13 @@
         {{with .Site.Data.l10n.articles.comments}}{{.}}{{end}}
     </a>
     {{end}}
+    <script src="https://utteranc.es/client.js"
+            repo="Cube219/Cube219.github.io"
+            issue-term="Comments: {{ .Title }}"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
 
     <script>
     (function ($) {

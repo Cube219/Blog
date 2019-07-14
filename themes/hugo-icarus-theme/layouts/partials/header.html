@@ -1,7 +1,7 @@
 <header id="header">
   <div id="header-main" class="header-inner">
     <div class="outer">
-      <a href="{{ .Site.BaseURL }}" id="logo">
+      <a href="{{ .Site.BaseURL }}" id="logo" class="waves-effect">
           {{ if .Site.Params.logo }}
           <i class="logo" style="background-image: url('{{ .Site.Params.logo | absURL }}')"></i>
           {{end}}
@@ -10,18 +10,24 @@
       <nav id="main-nav">
           {{ range .Site.Params.menu }}
           {{ if .before }}
-          <a class="main-nav-link" href="{{ .link | absURL }}">{{ .label }}</a>
+          <a class="main-nav-link waves-effect" href="{{ .link | absURL }}">
+            <i class="material-icons left">home</i>{{ .label }}
+          </a>
           {{ end }}
           {{ end }}
 
           {{ range .Site.Menus.main }}
           <!-- <a class="main-nav-link" href="{{ .URL }}">{{ .Name }}</a> -->
-          <a class="main-nav-link" href="{{ .URL }}">About</a>
+          <a class="main-nav-link waves-effect" href="{{ .URL }}">
+            <i class="material-icons left">account_circle</i>About
+          </a>
           {{ end }}
 
           {{ range .Site.Params.menu }}
           {{ if not .before }}
-          <a class="main-nav-link" href="{{ .link | absURL }}">{{ .label }}</a>
+          <a class="main-nav-link waves-effect" href="{{ .link | absURL }}">
+            <i class="material-icons left">format_list_bulleted</i>{{ .label }}
+          </a>
           {{ end }}
           {{ end }}
       </nav>
@@ -46,17 +52,23 @@
           <tr>
           {{ range .Site.Params.menu }}
           {{ if .before }}
-          <td><a class="main-nav-link" href="{{ .link | absURL }}">{{ .label }}</a></td>
+          <td><a class="main-nav-link waves-effect" href="{{ .link | absURL }}">
+            <i class="material-icons left">home</i>{{ .label }}</a>
+          </td>
           {{ end }}
           {{ end }}
 
           {{ range .Site.Menus.main }}
-          <td><a class="main-nav-link" href="{{ .URL }}">{{ .Name }}</a></td>
+          <td><a class="main-nav-link waves-effect" href="{{ .URL }}">
+            <i class="material-icons left">account_circle</i>About</a>
+          </td>
           {{ end }}
 
           {{ range .Site.Params.menu }}
           {{ if not .before }}
-          <td><a class="main-nav-link" href="{{ .link  | absURL }}">{{ .label }}</a></td>
+          <td><a class="main-nav-link waves-effect" href="{{ .link  | absURL }}">
+            <i class="material-icons left">format_list_bulleted</i>{{ .label }}</a>
+          </td>
           {{ end }}
           {{ end }}
           <td>

@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{ "css/monokai.css" | absURL }}">
     <link rel="stylesheet" href="{{ "fancybox/jquery.fancybox.css" | absURL }}">
     {{ range .Site.Params.custom_css }}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{{ . | absURL }}">
     {{ end }}
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" type='text/css'>
@@ -46,4 +47,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
-<div class="container">
+<div class="base-container">
