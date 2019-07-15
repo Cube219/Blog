@@ -1,5 +1,5 @@
 baseurl = "https://blog.cube219.me/"
-languageCode = "en-us"
+languageCode = "ko-kr"
 title = "Cube219's Blog"
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
