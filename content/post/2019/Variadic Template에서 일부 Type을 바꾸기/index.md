@@ -7,6 +7,7 @@ images = []
 menu = ""
 tags = []
 title = "Variadic Template에서 일부 Parameter Type을 바꾸기"
+slug = "change-some-parameter-types-in-variadic-template"
 +++
 
 개인적으로 만들고 있는 게임 엔진에서 문자열 formatting은 [{fmt}](https://github.com/fmtlib/fmt) 라이브러리를 사용하고 있다.
