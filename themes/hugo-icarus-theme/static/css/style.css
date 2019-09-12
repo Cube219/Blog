@@ -118,7 +118,7 @@ body,
 body {
   color: #565a5f;
   background: #f5f8f9;
-  font: 14px "Roboto", "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  font: 14px "Montserrat", "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 a {
@@ -248,23 +248,23 @@ code {
 }
 .article-entry h1,
 .widget h1 {
-  font-size: 2em;
+  font-size: 2.2em;
 }
 .article-entry h2,
 .widget h2 {
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 .article-entry h3,
 .widget h3 {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 .article-entry h4,
 .widget h4 {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 .article-entry h5,
 .widget h5 {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 .article-entry h6,
 .widget h6 {
@@ -330,7 +330,7 @@ code {
 .article-entry ol ol,
 .widget ol ol {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 .article-entry ul,
 .widget ul {
@@ -582,7 +582,7 @@ code {
   line-height: 1.6em;
   outline: none !important;
   background: none !important;
-  font: 14px "Roboto", "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  font: 14px "Montserrat", "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
   border: 1px solid #eceff2 !important;
 }
 .search-form-input:focus,
@@ -691,6 +691,7 @@ code {
 #profile .inner .base-info #name {
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 8px;
 }
 #profile .inner .base-info #location {
   font-size: 12px;
@@ -847,6 +848,7 @@ code {
 }
 .article-title {
   font-size: 2em;
+  font-weight: 700;
   color: #565a5f;
   text-decoration: none;
   line-height: 1.3em;
@@ -915,7 +917,7 @@ a .article-title:hover {
 .article-entry p,
 .article-entry table {
   line-height: 1.7em;
-  margin: 1.6em 0;
+  margin-bottom: 1.6em;
   font-size: 15px;
 }
 .article-entry h1,
@@ -933,7 +935,8 @@ a .article-title:hover {
 .article-entry h5,
 .article-entry h6 {
   line-height: 1.3em;
-  margin: 1.3em 0;
+  margin-top: 1.3em;
+  margin-bottom: 0.5em;
 }
 /* .article-entry a {
   color: #38b7ea;
@@ -995,7 +998,7 @@ a .article-title:hover {
 .article-entry blockquote footer {
   font-size: 14px;
   margin: 1.6em 0;
-  font-family: "Roboto", "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
 }
 .article-entry blockquote footer cite:before {
   content: "â€”";
@@ -1115,7 +1118,7 @@ a .article-title:hover {
   #article-nav {
     margin: 40px 0;
   }
-  #article-nav:before {
+  /* #article-nav:before {
     width: 8px;
     height: 8px;
     position: absolute;
@@ -1127,7 +1130,7 @@ a .article-title:hover {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     background: #787c81;
-  }
+  } */
 }
 .article-nav-link-wrap {
   text-decoration: none;
@@ -1199,7 +1202,7 @@ a .article-title:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font: 14px "Roboto", "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  font: 14px 'Montserrat', "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
   padding: 0 10px;
   color: #565a5f;
   outline: none;
@@ -2182,4 +2185,8 @@ ol.toc {
 
 .social-email {
   background-color: #3C5A99 !important;
+}
+
+pre {
+  margin-bottom: 1em;
 }
