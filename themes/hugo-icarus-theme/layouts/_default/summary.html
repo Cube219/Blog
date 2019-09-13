@@ -1,24 +1,25 @@
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <div class="archive-article-thumbnail">
-            {{ if isset .Params "banner" }}
-            <a href="{{ .Permalink }}" class="thumbnail">
-                <span style="background-image:url({{ .Params.banner | absURL }})" alt="{{ .Title }}" class="thumbnail-image"></span>
-            </a>
-            {{ else }}
-            <a href="{{ .Permalink }}" class="thumbnail">
-                <span class="thumbnail-image thumbnail-none"></span>
-            </a>
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+
+        {{ $pageLink := .Permalink }}
+        {{ if and (isset .Params "banner") (not (eq .Params.banner "")) }}
+            {{ range .Resources.Match .Params.banner }}
+                <a href="{{ $pageLink }}" itemprop="url">
+                    <img src="{{ .Permalink }}" class="article-banner">
+                </a>
             {{ end }}
+        {{ end }}
+
+        {{ partial "article_header" . }}
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                {{ .Description | default .Summary }}
+            </p>
+            <p class="article-more-link">
+                <a class="waves-effect btn-flat" href="{{ .Permalink }}">
+                    {{with .Site.Data.l10n.articles.read_more}}{{.}}{{end}}
+                </a>
+            </p>
         </div>
-        <header class="archive-article-header">
-            <h1 itemprop="name">
-            <a class="archive-article-title" href="{{ .Permalink }}">{{ .Title }}</a>
-            </h1>
-            <div class="archive-article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format .Site.Params.date_format }}</time>
-            </div>
-        </header>
     </div>
 </article>

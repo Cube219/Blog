@@ -1,30 +1,5 @@
-{{ $paginator := .Paginate (where .Data.Pages "Section" "in" .Site.Params.mainSections) }}
-{{ range $paginator.Pages }}
-<article class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-
-        {{ $pageLink := .Permalink }}
-        {{ if and (isset .Params "banner") (not (eq .Params.banner "")) }}
-            {{ range .Resources.Match .Params.banner }}
-                <a href="{{ $pageLink }}" itemprop="url">
-                    <img src="{{ .Permalink }}" class="article-banner">
-                </a>
-            {{ end }}
-        {{ end }}
-
-        {{ partial "article_header" . }}
-        <div class="article-entry" itemprop="articleBody">
-            <p>
-                {{ .Description | default .Summary }}
-            </p>
-            <p class="article-more-link">
-                <a class="waves-effect btn-flat" href="{{ .Permalink }}">
-                    {{with .Site.Data.l10n.articles.read_more}}{{.}}{{end}}
-                </a>
-            </p>
-        </div>
-    </div>
-</article>
+{{ range .Paginator.Pages }}
+    {{ .Render "summary" }}
 {{ end }}
 
 {{ partial "pagination" . }}
