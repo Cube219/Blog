@@ -836,6 +836,7 @@ code {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  max-height: 300px;
 }
 .article-header {
   padding: 20px 20px 0;
