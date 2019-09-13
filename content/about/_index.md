@@ -25,16 +25,16 @@ disable_comments = true
 * [CubeEngine](https://github.com/Cube219/CubeEngine) (진행중)
   * 모듈화를 지향하는 게임 엔진
   * 물리, 소리 등 주요 기능들을 모듈화 하고, 쉽게 붙혔다 땠다 할 수 있음
-  * Vulkan(링크)기반으로 개발중이며, 차후 다른 그래픽스 API도 지원 예정
+  * [Vulkan](https://www.khronos.org/vulkan/)기반으로 개발중이며, 차후 다른 그래픽스 API도 지원 예정
   * 그래픽스 / 게임엔진을 공부하기 위해 진행하는 프로젝트
 * [WebPageAlerter](https://github.com/Cube219/BlockBuster) (일시 중단)
   * 등록한 웹 사이트에 새로운 글이 올라오면 저장하고 알려주는 서비스
   * 자주 보는 사이트들의 글들을 한번에 모아서 보기 위해 만듬
-  * 백엔드는 Node.js + TypeScript, 프론트엔드는 Vue.js + [Quasar framework](https://quasar.dev/)
+  * 백엔드는 [Node.js](https://nodejs.org/) + [TypeScript](https://www.typescriptlang.org/), 프론트엔드는 [Vue.js](https://vuejs.org/) + [Quasar framework](https://quasar.dev/)
   * 최소한의 기능들은 구현되었으나, 너무 시간을 많이 잡아먹는 것 같아서 일시중단
 * [BlockBuster](https://github.com/Cube219/BlockBuster) (완료)
   * SW마에스트로 과제로 만들었던 벽돌 깨기
-  * 클라이언트는 Unity3d(링크), 서버는 Node.js(링크) 기반으로 제작
+  * 클라이언트는 [Unity3d](https://unity3d.com/unity), 서버는 [Node.js](https://nodejs.org/) 기반으로 제작
 
 -----
 
@@ -55,7 +55,7 @@ disable_comments = true
   * DirectX11 / 12
   * GLSL / HLSL
 * 게임 엔진
-  * [Unity3d](https://unity.com/)
+  * [Unity3d](https://unity3d.com/unity)
   * [Unreal Engine](https://www.unrealengine.com)
 
 ### Sub
