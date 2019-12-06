@@ -1,6 +1,6 @@
 +++
 banner = "images/architecture.png"
-categories = ["Project/WebPageAlerter", "2019"]
+categories = ["Project","WebPageAlerter"]
 date = "2019-09-13"
 description = ""
 images = []

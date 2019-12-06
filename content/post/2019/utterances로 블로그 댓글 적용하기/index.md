@@ -1,6 +1,6 @@
 +++
 banner = "images/cover.png"
-categories = ["Blog", "2019"]
+categories = ["Blog"]
 date = "2019-06-06"
 description = ""
 images = []

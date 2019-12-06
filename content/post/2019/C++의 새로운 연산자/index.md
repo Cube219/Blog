@@ -1,6 +1,6 @@
 +++
 banner = "images/cover.png"
-categories = ["C++", "2019"]
+categories = ["C++"]
 date = "2019-06-27"
 description = ""
 images = []
