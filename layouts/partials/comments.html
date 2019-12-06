@@ -1,0 +1,32 @@
+{{ if .Params.comments | default .Site.Params.enableComments }}
+    {{ if or (in .Site.Params.mainSections .Section) .Params.comments }}
+
+        <!-- <div class="load-comments">
+            digh
+            <div id="load-comments" onclick="loadComments()">{{ i18n "loadComments" }}</div>
+        </div> -->
+
+        {{ if .Site.Params.enableDisqus }}
+            <div id="disqus_thread"></div>
+        {{ end }}
+
+        {{ if .Site.Params.enableValine }}
+            <script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+            <div id="vcomments"></div>
+        {{ end }}
+
+
+        <div style="margin: 2.427em 0 1.5em; text-align: center; letter-spacing: 2em; padding-left: 2em;">
+            ...
+        </div>
+
+        <script src="https://utteranc.es/client.js"
+                repo="Cube219/Cube219.github.io"
+                issue-term="Comments: {{ .Title }}"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+    {{ end }}
+{{ end }}
