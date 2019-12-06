@@ -1,7 +1,6 @@
 +++
 title = "About Cube219"
 date = "2019-06-30"
-menu = "main"
 disable_comments = true
 +++
 

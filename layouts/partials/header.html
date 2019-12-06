@@ -1,0 +1,16 @@
+{{ if or (and .IsHome .Site.Params.displayHeaderInHome) (and (not .IsHome) .Site.Params.enableHeader) }}
+    <header class="header">
+        <div class="site-brand">
+            <div>
+                <a href="{{ print `/` | relLangURL }}">
+                    <img src="{{ .Site.BaseURL }}images/logo_new.png" style="width:150px; margin-top:30px">
+                </a>
+            </div>
+            {{ if .Site.Params.siteBrandSVG }}
+            <a href="{{ print `/` | relLangURL }}">{{ .Site.Data.SVG.brand | safeHTML }}</a>
+            {{ else }}
+            <a href="{{ print `/` | relLangURL }}" class="brand">{{ .Site.Title }}</a>
+            {{ end }}
+        </div>
+    </header>
+{{ end }}

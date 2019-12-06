@@ -1,10 +1,10 @@
 ##########################################
 # Site Settings
 
-baseURL = "https://example.com/"
-title = "Hugo Theme MemE"
-languageCode = "en-US"
-hasCJKLanguage = false
+baseURL = "https://blog.cube219.me/"
+title = "Cube219's Blog"
+languageCode = "ko-kr"
+hasCJKLanguage = true
 # Copyright information (Markdown supported)
 copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
 
@@ -15,17 +15,17 @@ theme = "meme"
 newContentEditor = ""
 
 # i18n
-defaultContentLanguage = "en-us"
+defaultContentLanguage = "ko-kr"
 defaultContentLanguageInSubdir = false
 
 # Pluralize titles in lists?
 pluralizeListTitles = false
 
 # The length of text in words to show in summary
-summaryLength = 42
+summaryLength = 150
 
 # Enable Emoji emoticons support?
-enableEmoji = false
+enableEmoji = true
 
 # Text to display for footnote return links
 footnoteReturnLinkContents = "↩"
@@ -68,7 +68,8 @@ uglyURLs = false
 
 # v0.60.0
 [markup]
-    defaultMarkdownHandler = "blackfriday"
+    # defaultMarkdownHandler = "blackfriday"
+    defaultMarkdownHandler = "goldmark"
 
 # Markdown rendering engine
 [blackfriday]
@@ -82,17 +83,17 @@ uglyURLs = false
 # Author’s information
 [author]
     # Name
-    name = "reuixiy"
+    name = "Cube219"
     # Email
-    email = "reuixiy@gmail.com"
+    email = "max804800@gmail.com"
     # Motto or introduction
-    motto = "Viva La Vida"
+    motto = "게임 개발자가 되고 싶은 사람."
     # Avatar
-    avatar = "/icons/apple-touch-icon.png"
+    avatar = "/images/logo_new.png"
     # Personal website, default: baseURL
-    website = "https://io-oi.me/"
+    website = "https://blog.cube219.me/"
     # Twitter
-    twitter = "reuixiy"
+    # twitter = "reuixiy"
 
 # Related content
 [related]
@@ -179,7 +180,7 @@ uglyURLs = false
         pre = "internal"
         post = "home"
     [[menu.main]]
-        url = "/posts/"
+        url = "/post/"
         name = "Posts"
         weight = 2
         pre = "internal"
@@ -221,7 +222,7 @@ uglyURLs = false
     # Brand Bar (inside header)
 
     # Use SVG?
-    siteBrandSVG = true
+    siteBrandSVG = false
     # If true, put your SVG in the `SVG.toml`
     # file and configure the following options.
     # Unit: px
@@ -235,11 +236,12 @@ uglyURLs = false
     # family can be configured in typography
     # section at the bottom of this file.
     # Unit: em
-    siteBrandFontSize = 5
+    siteBrandFontSize = 2
     siteBrandFontColor = "#fff"
 
     # siteBrandBackgroundColor = "hsl(240, 8%, 12%)"
-    siteBrandBackgroundImage = "linear-gradient(90deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%)"
+    siteBrandBackgroundColor = "hsl(240, 8%, 12%)"
+    # siteBrandBackgroundImage = "linear-gradient(90deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%)"
     # ATTENTION: These two items cannot be
     #            set together!
 
@@ -252,7 +254,7 @@ uglyURLs = false
     displayMenuInHome = true
 
     # Highlight current menu item by section?
-    activeInSection = false
+    activeInSection = true
     # Note: if true, the menu item in the
     #       post page will be highlighted
     #       also if that post’s section is
@@ -294,10 +296,10 @@ uglyURLs = false
     ######################################
     # Site Info
 
-    siteLogo = "/icons/apple-touch-icon.png"
+    siteLogo = "/images/logo_new.png"
     # Note: used for JSON-LD, Open Graph
 
-    siteDescription = "MemE is a powerful and highly customizable GoHugo theme for personal blogs."
+    siteDescription = "게임 개발자가 되고 싶은 사람."
     # Note: used for HTML head meta, JSON-LD,
     #       Open Graph, Atom, RSS
 
@@ -307,11 +309,11 @@ uglyURLs = false
     #       of the site will be taken as
     #       default if it is left empty([])
 
-    siteCreatedTime = "1969-07-20T20:17:43+00:00"
+    siteCreatedTime = "2019-05-06T20:17:43+00:00"
     # ATTENTION: keep this format, change
     #            the number
 
-    siteTwitter = "reuixiy"
+    siteTwitter = "Cube219's Blog"
     # Note: used for Twitter Cards
 
 
@@ -380,14 +382,14 @@ uglyURLs = false
     ######################################
     # List Page
 
-    listWidth = 30
+    listWidth = 42
     # Note: you can leave it empty("") to
     #       fallback to the default value: 42
     #       Unit: em
 
     displayListTitle = true
 
-    listDateFormat = "January 2"
+    listDateFormat = "2006-01-02"
     # ATTENTION: be sure to follow the
     #            specified format
     #            https://gohugo.io/functions/format/
@@ -399,12 +401,12 @@ uglyURLs = false
     groupByMonth = true
 
     # Enable Chinese zodiac?
-    chineseZodiac = true
+    chineseZodiac = false
 
     # Translate the year? (valid for title)
     i18nYear = false
     # Translate the month? (valid for title)
-    i18nMonth = false
+    i18nMonth = true
 
 
     ######################################
@@ -536,7 +538,7 @@ uglyURLs = false
     ######################################
     # InstantClick
 
-    enableInstantClick = true
+    enableInstantClick = false
 
 
     ######################################
@@ -645,7 +647,7 @@ uglyURLs = false
     #            supported
 
     # The content width of the post
-    postWidth = 32
+    postWidth = 42
     # Note: you can leave it empty("") to
     #       fallback to the default value: 42
     #       Unit: em
@@ -686,20 +688,20 @@ uglyURLs = false
     displayPublishedDate = true
     publishedDateIcon = "calendar-alt"
 
-    displayModifiedDate = true
+    displayModifiedDate = false
     modifiedDateIcon = "calendar-check"
 
-    displayExpiredDate = true
+    displayExpiredDate = false
     expiredDateIcon = "calendar-times"
 
     displayCategory = true
     categoryIcon = "folder"
     categoryDelimiter = "/"
 
-    displayWordCount = true
+    displayWordCount = false
     wordCountIcon = "pencil-alt"
 
-    displayReadingTime = true
+    displayReadingTime = false
     readingTimeIcon = "clock"
 
 
@@ -832,9 +834,9 @@ uglyURLs = false
     # Menu bar
     fontFamilyMenu = ""
     # Post title, post subtitle, list title, year and month title of the list, related posts title, previous/next post title, header of table, term/name in a definition list
-    fontFamilyTitle = "Comfortaa, sans-serif"
+    fontFamilyTitle = "'Montserrat', 'Noto Sans Kr', sans-serif"
     # Headings, toc title
-    fontFamilyHeadings = "Comfortaa, sans-serif"
+    fontFamilyHeadings = "'Montserrat', 'Noto Sans Kr', sans-serif"
     # Code, superscript, post meta info, post updated badge, post gitinfo, minimal footer
     fontFamilyCode = "'Source Code Pro', monospace"
     # Blockquotes
@@ -846,10 +848,10 @@ uglyURLs = false
     # Footer
     fontFamilyFooter = ""
     # Body
-    fontFamilyBody = "'IBM Plex Serif', serif"
+    fontFamilyBody = "'Montserrat', 'Noto Sans Kr', sans-serif"
 
     # Embed fonts link
-    fontsLink = "https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,500,700,700i|Source+Code+Pro:400,400i,700,700i|Comfortaa:700&display=swap"
+    fontsLink = "https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+KR|Source+Code+Pro:400,400i,700,700i|Comfortaa:700&display=swap"
     # Note: In order for the reader to
     #       experience the fonts you set,
     #       it is best to use web fonts.
@@ -868,7 +870,7 @@ uglyURLs = false
     ######################################
     ## Line Height
 
-    lineHeight = 1.618
+    lineHeight = 1.8
     # Note: apply to post paragraph & toc
     #       only
 
@@ -894,7 +896,7 @@ uglyURLs = false
     ######################################
     ## Drop Cap
 
-    enableDropCap = true
+    enableDropCap = false
     # Note: *global settings*
     #       `dropCap` in post’s Front Matter
     #       has a higher priority than here
@@ -916,7 +918,7 @@ uglyURLs = false
     ######################################
     ## Small Caps
 
-    enableSmallCaps = true
+    enableSmallCaps = false
     # Note: apply to headings & post toc
     #       title only
     #       *global settings*
@@ -940,7 +942,7 @@ uglyURLs = false
     ######################################
     # Post Copyright
 
-    enablePostCopyright = true
+    enablePostCopyright = false
 
     displayPostCopyright = true
     # Note: *global settings*
@@ -951,7 +953,7 @@ uglyURLs = false
     ######################################
     # Post Updated Badge
 
-    enablePostUpdatedBadge = true
+    enablePostUpdatedBadge = false
 
     displayUpdatedBadge = true
     # Note: *global settings*
@@ -994,7 +996,7 @@ uglyURLs = false
     ######################################
     # Related Posts
 
-    enableRelatedPosts = true
+    enableRelatedPosts = false
 
     displayRelatedPosts = true
     # Note: *global settings*
@@ -1031,7 +1033,7 @@ uglyURLs = false
 
     # Apply to posts that below the same
     # top level section only?
-    postNavInSection = true
+    postNavInSection = false
 
 
     ######################################
@@ -1083,7 +1085,7 @@ uglyURLs = false
     ######################################
     # Multilingual
 
-    enableLangToggle = false
+    enableLangToggle = true
 
     hideLangToggleInHome = false
 

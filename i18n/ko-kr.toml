@@ -1,0 +1,119 @@
+[flag]
+other = "🇺🇸"
+
+[ellipsis]
+other = "..."
+
+[minute]
+one = "분"
+other = "분"
+
+[tocTitle]
+other = "Contents"
+
+[readMore]
+other = "더 보기"
+
+[prevPage]
+other = "Newer"
+
+[nextPage]
+other = "Older"
+
+[copyrightAuthor]
+other = "Author: "
+
+[copyrightLink]
+other = "Link: "
+
+[copyrightLicense]
+other = "License: "
+
+[relatedPosts]
+other = "관련 글:"
+
+[loadComments]
+other = "Load Comments?"
+
+[fofLinkText]
+other = "첫 화면으로"
+
+[serviceWorkerUpdatedText]
+other = "New Update Available"
+
+[serviceWorkerUpdatedAction]
+other = "Refresh"
+
+
+# Months
+# Used for `i18nMonth`
+
+[january]
+other = "1월"
+
+[february]
+other = "2월"
+
+[march]
+other = "3월"
+
+[april]
+other = "4월"
+
+[may]
+other = "5월"
+
+[june]
+other = "6월"
+
+[july]
+other = "7월"
+
+[august]
+other = "8월"
+
+[september]
+other = "9월"
+
+[october]
+other = "10월"
+
+[november]
+other = "11월"
+
+[december]
+other = "12월"
+
+
+# Numbers
+# Used for `i18nYear`
+
+[0]
+other = "0"
+
+[1]
+other = "1"
+
+[2]
+other = "2"
+
+[3]
+other = "3"
+
+[4]
+other = "4"
+
+[5]
+other = "5"
+
+[6]
+other = "6"
+
+[7]
+other = "7"
+
+[8]
+other = "8"
+
+[9]
+other = "9"
