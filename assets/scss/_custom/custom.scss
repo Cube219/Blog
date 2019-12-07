@@ -23,3 +23,20 @@ img.article-banner {
     margin-top: 1em;
     margin-bottom: 3em;
 }
+
+// social nav bar
+.social-nav-bar {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.social-nav-item {
+    display: inline-block;
+    margin: 0 0.4em;
+}
+
+.social-nav-item a {
+    color: #E3E3E3;
+}

@@ -11,6 +11,84 @@
             {{ else }}
             <a href="{{ print `/` | relLangURL }}" class="brand">{{ .Site.Title }}</a>
             {{ end }}
+
+            <ul class="social-nav-bar">
+                {{ with .Site.Params.socialGithub }}
+                <li class="social-nav-item">
+                    <a class="social-link" href="{{ . }}" target="_blank">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </li>
+                {{ end }}
+                {{ with .Site.Params.socialGitlab }}
+                <li class="social-nav-item">
+                    <a class="social-link" href="{{ . }}" target="_blank">
+                        <i class="fab fa-gitlab fa-2x"></i>
+                    </a>
+                </li>
+                {{ end }}
+                {{ with .Site.Params.socialFacebook }}
+                <li class="social-nav-item">
+                    <a class="social-link" href="{{ . }}" target="_blank">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                </li>
+                {{ end }}
+                {{ with .Site.Params.socialTwitter }}
+                <li class="social-nav-item">
+                    <a class="social-link" href="{{ . }}" target="_blank">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </li>
+                {{ end }}
+                {{ with .Site.Params.socialInstagram }}
+                <li class="social-nav-item">
+                    <a class="social-link" href="{{ . }}" target="_blank">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </li>
+                {{ end }}
+                {{ with .Site.Params.socialYoutube }}
+                <li class="social-nav-item">
+                    <a class="social-link" href="{{ . }}" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                </li>
+                {{ end }}
+                {{ with .Site.Params.socialMedium }}
+                <li class="social-nav-item">
+                    <a class="social-link" href="{{ . }}" target="_blank">
+                        <i class="fab fa-medium fa-2x"></i>
+                    </a>
+                </li>
+                {{ end }}
+                {{ with .Site.Params.socialLinkedin }}
+                <li class="social-nav-item">
+                    <a class="social-link" href="{{ . }}" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </li>
+                {{ end }}
+                {{ with .Site.Params.socialPinterest }}
+                <li class="social-nav-item">
+                    <a class="social-link" href="{{ . }}" target="_blank">
+                        <i class="fab fa-pinterest fa-2x"></i>
+                    </a>
+                </li>
+                {{ end }}
+                {{ with .Site.Params.socialGoogleplus }}
+                <li class="social-nav-item">
+                    <a class="social-link" href="{{ . }}" target="_blank">
+                        <i class="fab fa-google-plus fa-2x"></i>
+                    </a>
+                </li>
+                {{ end }}
+                <li class="social-nav-item">
+                    <a class="social-link" href="{{ .Site.BaseURL }}rss.xml" target="_blank">
+                        <i class="fas fa-rss fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 {{ end }}

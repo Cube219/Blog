@@ -236,7 +236,7 @@ uglyURLs = false
     # family can be configured in typography
     # section at the bottom of this file.
     # Unit: em
-    siteBrandFontSize = 2
+    siteBrandFontSize = 2.5
     siteBrandFontColor = "#fff"
 
     # siteBrandBackgroundColor = "hsl(240, 8%, 12%)"
@@ -1118,3 +1118,17 @@ uglyURLs = false
     fofVideoMp4 = ""
     # Note: you can leave these two
     #       options empty("")
+
+    ######################################
+    # Custom
+    # Social Page url
+    socialGithub = "https://github.com/cube219"
+    socialGitlab = ""
+    socialFacebook = "https://facebook.com/profile.php?id=100001164136339"
+    socialTwitter = ""
+    socialInstagram = ""
+    socialYoutube = ""
+    socialMedium = ""
+    socialLinkedin = ""
+    socialPinterest = ""
+    socialGoogleplus = ""
