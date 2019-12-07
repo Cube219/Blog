@@ -607,7 +607,7 @@ uglyURLs = false
     trackingCodeType = "gtag"
     # Note: gtag or analytics
 
-    trackingID = ""
+    trackingID = "UA-154144484-1"
 
 
     ######################################
