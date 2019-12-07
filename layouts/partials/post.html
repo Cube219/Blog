@@ -1,7 +1,10 @@
 <main class="main single" id="main">
     <div class="main-inner">
         <article class="content post">
-
+            {{ if and (isset .Params "banner") (not (eq .Params.banner "")) }}
+                <img src="{{ .Params.banner }}" class="article-banner">
+            {{ end }}
+            
             <h1 class="post-title">{{ .Title }}</h1>
 
             {{ with .Params.subtitle }}
