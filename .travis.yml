@@ -8,7 +8,12 @@ cache:
     - $HOME/gopath/pkg/mod
 
 install:
-  - go get github.com/gohugoio/hugo
+  - mkdir $HOME/src
+  - cd $HOME/src
+  - git clone https://github.com/gohugoio/hugo.git
+  - cd hugo
+  - go install --tags extended
+  - cd /home/travis/gopath/src/github.com/Cube219/Blog
 
 git:
   depth: 1
