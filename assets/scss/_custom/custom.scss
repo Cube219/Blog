@@ -1,0 +1,15 @@
+a .summary-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 300px;
+    border: none;
+    margin: 0;
+    margin-bottom: -2em;
+}
+
+.main-separator {
+    border-bottom: 1px dashed var(--color-contrast-low);
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
