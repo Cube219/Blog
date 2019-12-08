@@ -39,4 +39,7 @@ img.article-banner {
 
 .social-nav-item a {
     color: #E3E3E3;
+    &:hover {
+        color: var(--color-primary);
+    }
 }
