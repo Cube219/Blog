@@ -3,7 +3,7 @@
         <div class="site-brand">
             <div>
                 <a href="{{ print `/` | relLangURL }}">
-                    <img src="{{ .Site.BaseURL }}images/logo_new.png" style="width:150px; margin-top:30px">
+                    <img src="{{ .Site.BaseURL }}images/logo_new.png" style="width:150px; margin-top:30px; margin-bottom: -1em;">
                 </a>
             </div>
             {{ if .Site.Params.siteBrandSVG }}
@@ -16,7 +16,7 @@
                 {{ with .Site.Params.socialGithub }}
                 <li class="social-nav-item">
                     <a class="social-link" href="{{ . }}" target="_blank">
-                        <i class="fab fa-github fa-2x"></i>
+                        <i class="fab fa-github"></i>
                     </a>
                 </li>
                 {{ end }}
@@ -30,7 +30,7 @@
                 {{ with .Site.Params.socialFacebook }}
                 <li class="social-nav-item">
                     <a class="social-link" href="{{ . }}" target="_blank">
-                        <i class="fab fa-facebook-square fa-2x"></i>
+                        <i class="fab fa-facebook-square"></i>
                     </a>
                 </li>
                 {{ end }}
@@ -85,7 +85,7 @@
                 {{ end }}
                 <li class="social-nav-item">
                     <a class="social-link" href="{{ .Site.BaseURL }}rss.xml" target="_blank">
-                        <i class="fas fa-rss fa-2x"></i>
+                        <i class="fas fa-rss"></i>
                     </a>
                 </li>
             </ul>

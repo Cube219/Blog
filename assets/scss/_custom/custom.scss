@@ -1,3 +1,4 @@
+// summary banner
 img.summary-banner {
     width: 100%;
     height: 100%;
@@ -8,6 +9,7 @@ img.summary-banner {
     margin-bottom: -2em;
 }
 
+// article banner
 img.article-banner {
     width: 100%;
     height: 100%;
@@ -18,6 +20,7 @@ img.article-banner {
     margin-bottom: -2em;
 }
 
+// separator between each summary
 .main-separator {
     border-bottom: 1px dashed var(--color-contrast-low);
     margin-top: 1em;
@@ -27,18 +30,26 @@ img.article-banner {
 // social nav bar
 .social-nav-bar {
     margin: 0px;
+    margin-top: -0.5em;
     padding: 0px;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
     text-align: center;
 }
 
 .social-nav-item {
     display: inline-block;
-    margin: 0 0.4em;
+    margin: 0 0.1em;
+    font-size: 1.5em;
 }
 
 .social-nav-item a {
     color: #E3E3E3;
+    &:hover {
+        color: var(--color-primary);
+    }
+}
+
+a.brand {
     &:hover {
         color: var(--color-primary);
     }
