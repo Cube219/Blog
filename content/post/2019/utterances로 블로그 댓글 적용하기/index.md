@@ -1,14 +1,12 @@
-+++
-banner = "images/cover.png"
-categories = ["Blog"]
-date = "2019-06-06"
-description = ""
-images = []
-menu = ""
-tags = []
-title = "utterances로 블로그 댓글 적용하기"
-slug = "apply-blog-comments-with-utterances"
-+++
+---
+title: "utterances로 블로그 댓글 적용하기"
+slug: "apply-blog-comments-with-utterances"
+date: "2019-06-06"
+categories: ["Blog"]
+banner: "images/cover.png"
+description: ""
+tags: []
+---
 
 이 블로그는 [Hugo](https://gohugo.io/)라는 정적 웹 페이지 생성기로 만들었는데,  정적 웹 페이지인 경우 서버에 있는 데이터를 실시간으로 수정하지 않기 때문에 댓글 기능을 구현하기가 힘들다. 그래서 이러한 댓글 기능을 추가하는 여러 서비스들이 있다.  이 테마에서는 [disqus](https://disqus.com/)하고 [staticman](https://staticman.net/)을 지원해서 한 번 적용시켜봤는데, 둘 다 만족스럽지가 않았다.
 

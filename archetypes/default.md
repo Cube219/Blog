@@ -1,10 +1,11 @@
-+++
-tags = []
-categories = []
-description = ""
-menu = ""
-banner = ""
-images = []
-+++
+---
+title: ""
+slug: ""
+date: {{ .Date }}
+categories: []
+banner: ""
+description: ""
+tags: []
+---
 
 <!--more-->

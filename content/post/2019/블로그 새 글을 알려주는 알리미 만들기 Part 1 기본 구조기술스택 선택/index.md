@@ -1,15 +1,12 @@
-+++
-banner = "images/architecture.png"
-categories = ["Project","WebPageAlerter"]
-date = "2019-09-13"
-description = ""
-images = []
-menu = ""
-tags = []
-title = "블로그 새 글을 알려주는 알리미 만들기 Part 1: 기본 구조/기술 스택 선택"
-slug = "making-a-alerter-for-new-blog-posts-part1"
-
-+++
+---
+title: "블로그 새 글을 알려주는 알리미 만들기 Part 1: 기본 구조/기술 스택 선택"
+slug: "making-a-alerter-for-new-blog-posts-part1"
+date: "2019-09-13"
+categories: ["Project","WebPageAlerter"]
+banner: "images/architecture.png"
+description: ""
+tags: []
+---
 
 요즘 [게임 엔진 프로젝트](https://github.com/Cube219/CubeEngine)만 계속 진행하다 보니까 너무 지루하고 힘들어서 의욕이 나질 않았다. 그래서 잠깐 쉴 겸 새로운 서브 프로젝트를 하나 진행해야 겠다고 생각했다. 어떤 것을 할까 생각하다가 예전부터 필요하다고 생각했던 것을 구현하기로 했다.
 

@@ -1,14 +1,12 @@
-+++
-banner = ""
-categories = ["C++"]
-date = "2019-05-12"
-description = ""
-images = []
-menu = ""
-tags = []
-title = "Variadic Template에서 일부 Parameter Type을 바꾸기"
-slug = "change-some-parameter-types-in-variadic-template"
-+++
+---
+title: "Variadic Template에서 일부 Parameter Type을 바꾸기"
+slug: "change-some-parameter-types-in-variadic-template"
+date: "2019-05-12"
+categories: ["C++"]
+banner: ""
+description: ""
+tags: []
+---
 
 개인적으로 만들고 있는 게임 엔진에서 문자열 formatting은 [{fmt}](https://github.com/fmtlib/fmt) 라이브러리를 사용하고 있다.
 

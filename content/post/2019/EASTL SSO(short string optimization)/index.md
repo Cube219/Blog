@@ -1,14 +1,12 @@
-+++
-banner = ""
-categories = ["EASTL"]
-date = "2019-06-01"
-description = ""
-images = []
-menu = ""
-tags = []
-title = "EASTL SSO(short string optimization)"
-slug = "eastl-sso"
-+++
+---
+title: "EASTL SSO(short string optimization)"
+slug: "eastl-sso"
+date: "2019-06-01"
+categories: ["EASTL"]
+banner: ""
+description: ""
+tags: []
+---
 
 최근 [EASTL](https://github.com/electronicarts/EASTL)에 있는 string을 쓰면서 내부에 구현된 최적화 방법을 발견했는데, 이게 상당히 흥미로웠다.
 

@@ -1,15 +1,12 @@
-+++
-banner = "images/cover.png"
-categories = ["C++"]
-date = "2019-06-27"
-description = ""
-images = []
-menu = ""
-tags = []
-title = "C++의 새로운 연산자?"
-slug = "new-operator-in-cpp"
-
-+++
+---
+title: "C++의 새로운 연산자?"
+slug: "new-operator-in-cpp"
+date: "2019-06-27"
+categories: ["C++"]
+banner: "images/cover.png"
+description: ""
+tags: []
+---
 
 오늘 슬랙을 보다가 [재미난 글](https://twitter.com/Lusain_Kim/status/1125069515220381696)이 올라왔다.
 
