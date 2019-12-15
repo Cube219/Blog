@@ -68,8 +68,8 @@ uglyURLs = false
 
 # v0.60.0
 [markup]
-    # defaultMarkdownHandler = "blackfriday"
-    defaultMarkdownHandler = "goldmark"
+    defaultMarkdownHandler = "blackfriday"
+    # defaultMarkdownHandler = "goldmark"
 
 # Markdown rendering engine
 [blackfriday]
