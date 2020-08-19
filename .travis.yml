@@ -1,6 +1,6 @@
 language: go
 go:
-  - "1.12.4"
+  - "1.14"
 
 cache:
   directories:
@@ -10,7 +10,7 @@ cache:
 install:
   - mkdir $HOME/src
   - cd $HOME/src
-  - git clone https://github.com/gohugoio/hugo.git
+  - git clone https://github.com/gohugoio/hugo.git --depth=1 -b stable
   - cd hugo
   - go install --tags extended
   - cd /home/travis/gopath/src/github.com/Cube219/Blog
