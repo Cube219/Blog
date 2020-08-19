@@ -28,6 +28,9 @@ date = "2020-08-19"
   * 물리, 소리 등 주요 기능들을 모듈화 하고, 쉽게 붙혔다 땠다 할 수 있음
   * [Vulkan](https://www.khronos.org/vulkan/)기반으로 개발중이며, 차후 다른 그래픽스 API도 지원 예정
   * 그래픽스 / 게임엔진을 공부하기 위해 진행하는 프로젝트
+* [MelonCrawler4YTMusic](https://github.com/Cube219/MelonCrawler4YTMusic) (완료)
+  * 멜론 차트의 음악들을 Youtube Music에 주기적으로 넣어주는 프로그램
+  * [Python](https://www.python.org/)을 이용해 개발
 * [WebPageAlerter](https://github.com/Cube219/BlockBuster) (일시 중단)
   * 등록한 웹 사이트에 새로운 글이 올라오면 저장하고 알려주는 서비스
   * 자주 보는 사이트들의 글들을 한번에 모아서 보기 위해 만듬
