@@ -4,5 +4,5 @@ window.addEventListener("DOMContentLoaded", event => {
         commentsToggle.style = "display: none";
     }
 
-    loadComments();
+    // loadComments();
 }, {once: true});

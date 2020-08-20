@@ -670,7 +670,7 @@ uglyURLs = false
     ## Utterances
     enableUtterances = true
     utterancesRepo = "Cube219/Cube219.github.io"
-    utterancesIssueTerm = "Comments: {{ .Title }}"
+    utterancesIssueTerm = "## Defined in layouts/partials/third-party/utterancse.html ##"
     utterancesTheme = "github-light"
     utterancesThemeDark = "photon-dark"
     utterancesLabel = ""
