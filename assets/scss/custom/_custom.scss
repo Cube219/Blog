@@ -9,6 +9,7 @@ img.summary-banner {
     margin-bottom: -2em;
 }
 
+
 // article banner
 img.article-banner {
     width: 100%;
@@ -27,28 +28,6 @@ img.article-banner {
     margin-bottom: 3em;
 }
 
-// social nav bar
-.social-nav-bar {
-    margin: 0px;
-    margin-top: -0.5em;
-    padding: 0px;
-    padding-bottom: 0.5em;
-    text-align: center;
-}
-
-.social-nav-item {
-    display: inline-block;
-    margin: 0 0.1em;
-    font-size: 1.5em;
-}
-
-.social-nav-item a {
-    color: #E3E3E3;
-    &:hover {
-        color: var(--color-primary);
-    }
-}
-
 a.brand {
     &:hover {
         color: var(--color-primary);
@@ -56,4 +35,8 @@ a.brand {
     @media screen and (max-width: 400px) {
         font-size: 12vw;
     }
+}
+
+.post-body a {
+    text-decoration-color: var(--color-contrast-high);
 }
