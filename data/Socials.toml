@@ -1,0 +1,34 @@
+[[socials]]
+    id = "rss"
+    url = "/rss.xml"
+    icon = "rss"
+    title = "RSS"
+    weight = 1
+
+[[socials]]
+    id = "email"
+    url = "mailto:max804800@gmail.com"
+    icon = "envelope"
+    title = "Email"
+    weight = 2
+
+[[socials]]
+    id = "github"
+    url = "https://github.com/cube219"
+    icon = "github"
+    title = "GitHub"
+    weight = 3
+
+[[socials]]
+    id = "facebook"
+    url = "https://facebook.com/profile.php?id=100001164136339"
+    icon = "facebook"
+    title = "Facebook"
+    weight = 4
+
+[[socials]]
+    id = "instagram"
+    url = "https://www.instagram.com/cube219"
+    icon = "instagram"
+    title = "Instagram"
+    weight = 5

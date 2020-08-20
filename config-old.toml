@@ -36,10 +36,16 @@ enableGitInfo = false
 # Enable generation of `robots.txt` file?
 enableRobotsTXT = true
 
-# Number of items per page in paginated
+# Number of items per page in paginated 
 # lists (valid for the `posts` homepage
 # layout in MemE)
 paginate = 5
+
+# GitHub flavoured code fences
+pygmentsCodefences = true
+pygmentsUseClasses = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsOptions = "linenos=table"
 
 # URL related
 disablePathToLower = false
@@ -60,36 +66,19 @@ uglyURLs = false
 [frontmatter]
     lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
 
-# Markdown renderer
+# v0.60.0
 [markup]
-    defaultMarkdownHandler = "goldmark"
-    [markup.goldmark]
-        [markup.goldmark.extensions]
-            definitionList = true
-            footnote = true
-            linkify = true
-            strikethrough = true
-            table = true
-            taskList = true
-            typographer = true
-        [markup.goldmark.parser]
-            attribute = true
-            autoHeadingID = true
-            autoHeadingIDType = "github"
-        [markup.goldmark.renderer]
-            hardWraps = false
-            unsafe = true
-            xHTML = false
-    [markup.highlight]
-        codeFences = true
-        guessSyntax = false
-        lineNos = true
-        lineNumbersInTable = true
-        noClasses = false
-    [markup.tableOfContents]
-        startLevel = 2
-        endLevel = 6
-        ordered = true
+    defaultMarkdownHandler = "blackfriday"
+    # defaultMarkdownHandler = "goldmark"
+
+# Markdown rendering engine
+[blackfriday]
+    # Enable smart punctuation substitutions?
+    smartypants = true
+    # Open external links in a new window or tab?
+    hrefTargetBlank = true
+    # Disable some Blackfriday’s Markdown extensions
+    extensionsmask = ["hardLineBreak", "backslashLineBreak"]
 
 # Author’s information
 [author]
@@ -136,15 +125,10 @@ uglyURLs = false
     mediaType = "application/rss+xml"
     baseName = "rss"
 
-# Search index for lunr.js
-[outputFormats.SearchIndex]
-    mediaType = "application/json"
-    baseName = "search"
-
 # Hugo’s output control
 [outputs]
     page = ["HTML"]
-    home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex"]
+    home = ["HTML", "SectionsAtom", "SectionsRSS"]
     section = ["HTML"]
     # Taxonomy
     taxonomyTerm = ["HTML"]
@@ -163,8 +147,6 @@ uglyURLs = false
 
 # MemE supports the following four menus:
 # 1. main       Menu bar below the header
-#               (center layout) or inside
-#               the header (flex layout)
 # 2. home       Links at the bottom of the
 #               homepage (valid for the
 #               `poetry` and `footage`
@@ -186,11 +168,8 @@ uglyURLs = false
 # post          Icon (won’t display if it
 #               is left empty("") or does
 #               not exist)
-# identifier    Icon’s class name
-#               (there are three special
-#               values for header layout
-#               flex: `theme-switcher`,
-#               `lang-switcher`, `search`)
+# identifier    Icon’s class name (invalid
+#               for the `main` menu)
 
 [menu]
     ## Menu bar
@@ -201,7 +180,7 @@ uglyURLs = false
         pre = "internal"
         post = "home"
     [[menu.main]]
-        url = "/posts/"
+        url = "/post/"
         name = "Posts"
         weight = 2
         pre = "internal"
@@ -224,16 +203,6 @@ uglyURLs = false
         weight = 5
         pre = "internal"
         post = "user-circle"
-    [[menu.main]]
-        weight = 6
-        identifier = "theme-switcher"
-    [[menu.main]]
-        weight = 7
-        identifier = "lang-switcher"
-    [[menu.main]]
-        weight = 8
-        identifier = "search"
-        post = "search"
 
 
 
@@ -247,21 +216,6 @@ uglyURLs = false
     enableHeader = true
 
     displayHeaderInHome = true
-    # Note: invalid for header layout flex
-
-    headerBackground = "linear-gradient(90deg, #f795331a 0, #f370551a 15%, #ef4e7b1a 30%, #a166ab1a 44%, #5073b81a 58%, #1098ad1a 72%, #07b39b1a 86%, #6dba821a 100%)"
-    # Note: https://developer.mozilla.org/en-US/docs/Web/CSS/background
-
-    headerLayout = "flex"
-    # Note: center or flex
-
-    # Hide menu bar and display a toggle
-    # on narrow screen?
-    enableNavToggle = true
-
-    navHeight = "10em"
-    # Note: menu bar height when it’s
-    #       toggled
 
 
     ######################################
@@ -283,20 +237,24 @@ uglyURLs = false
     # section at the bottom of this file.
     # Unit: em
     siteBrandFontSize = 2.5
-    siteBrandFontColor = "var(--color-contrast-high)"
+    siteBrandFontColor = "#fff"
+
+    # siteBrandBackgroundColor = "hsl(240, 8%, 12%)"
+    siteBrandBackgroundColor = "hsl(240, 8%, 12%)"
+    # siteBrandBackgroundImage = "linear-gradient(90deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%)"
+    # ATTENTION: These two items cannot be
+    #            set together!
 
 
     ######################################
     # Menu Bar
 
     enableMenu = true
-    # Note: invalid for header layout flex
 
     displayMenuInHome = true
-    # Note: invalid for header layout flex
 
     # Highlight current menu item by section?
-    activeInSection = false
+    activeInSection = true
     # Note: if true, the menu item in the
     #       post page will be highlighted
     #       also if that post’s section is
@@ -345,6 +303,12 @@ uglyURLs = false
     # Note: used for HTML head meta, JSON-LD,
     #       Open Graph, Atom, RSS
 
+    siteKeywords = []
+    # Note: all taxonomy terms and sections
+    #       name (if category by sections)
+    #       of the site will be taken as
+    #       default if it is left empty([])
+
     siteCreatedTime = "2019-05-06T20:17:43+00:00"
     # ATTENTION: keep this format, change
     #            the number
@@ -385,10 +349,7 @@ uglyURLs = false
     #            in `taxonomies` at the top
     #            of this file. Otherwise,
     #            the categories page will
-    #            be invalid. Also, you need
-    #            to create a new
-    #            `content/categories/_index.md`
-    #            file by yourself.
+    #            be invalid.
 
 
     ######################################
@@ -406,11 +367,6 @@ uglyURLs = false
     # Display count of posts under each
     # category?
     displayPostsCount = true
-
-    # Set to a non-negative number to limit
-    # the number of posts displayed per
-    # category/section.
-    limitPostsLimit = 3
 
 
     ######################################
@@ -467,11 +423,6 @@ uglyURLs = false
     # Display count of posts in each
     # taxonomy term?
     displayTaxonomyTermCount = true
-
-    # Set to a non-negative number to limit
-    # the number of posts displayed per
-    # taxonomy term.
-    limitEntriesLimit = 3
 
 
     ######################################
@@ -533,10 +484,6 @@ uglyURLs = false
     #       may still read your blog in
     #       light mode, even if you have
     #       hidden the theme toggle.
-    #       Unless you enable the following
-    #       option.
-
-    overrideSystemPreferences = false
 
 
     ######################################
@@ -559,7 +506,7 @@ uglyURLs = false
     #       content (the path of the icons).
 
     themeColor = "#fff"
-    themeColorDark = "#16171d"
+    themeColorDark = "#1c1c21"
     safariMaskColor = "#2a6df4"
     msApplicationTileColor = "#fff"
 
@@ -589,6 +536,12 @@ uglyURLs = false
 
 
     ######################################
+    # InstantClick
+
+    enableInstantClick = false
+
+
+    ######################################
     # Service Worker
 
     # Note: render only in production
@@ -606,29 +559,6 @@ uglyURLs = false
     # Note: *global settings*
     #       `katex` in post’s Front Matter
     #       has a higher priority than here
-
-
-    ######################################
-    # MathJax (chemical equation supported)
-
-    enableMathJax = false
-    # Note: *global settings*
-    #       `mathjax` in post’s Front Matter
-    #       has a higher priority than here
-
-    disableMathJaxMenu = false
-
-
-    ######################################
-    # Mermaid (https://github.com/mermaid-js/mermaid)
-
-    enableMermaid = false
-    # Note: *global settings*
-    #       `mermaid` in post’s Front Matter
-    #       has a higher priority than here
-
-    mermaidTheme = 'default'
-    mermaidThemeDark = 'dark'
 
 
     ######################################
@@ -651,6 +581,8 @@ uglyURLs = false
     valineAppId = ""
     valineAppKey = ""
     valinePlaceholder = "Just go go"
+    valineNotify = false
+    valineVerify = false
     valinePath = ""
     valineAvatar = "mm"
     valineMeta = ["nick", "mail", "link"]
@@ -658,23 +590,10 @@ uglyURLs = false
     valineLang = "en"
     valineVisitor = false
     valineHighlight = true
-    valineAvatarForce = false
+    avatarForce = false
     valineRecordIP = false
     valineServerURLs = ""
-    valineEmojiCDN = ""
-    valineEmojiMaps = {}
-    valineEnableQQ = false
-    valineRequiredFields = []
     # Note: https://valine.js.org/
-
-    ## Utterances
-    enableUtterances = true
-    utterancesRepo = "Cube219/Cube219.github.io"
-    utterancesIssueTerm = "Comments: {{ .Title }}"
-    utterancesTheme = "github-light"
-    utterancesThemeDark = "photon-dark"
-    utterancesLabel = ""
-    # Note: https://utteranc.es/
 
 
     ######################################
@@ -785,20 +704,6 @@ uglyURLs = false
     displayReadingTime = false
     readingTimeIcon = "clock"
 
-    displayBusuanziPagePV = false
-    busuanziPagePVIcon = "eye"
-    # Note: render only in production
-    #       environment
-    #       Homepage is not supported yet
-    #       https://busuanzi.ibruce.info/
-
-
-    ######################################
-    # Markdown Related
-
-    # Open external links in a new tab?
-    hrefTargetBlank = true
-
 
     ######################################
     # Table of Contents
@@ -809,11 +714,6 @@ uglyURLs = false
     #       has a higher priority than here
 
     displayTOCTitle = true
-
-    displayTOCNum = true
-    # Note: *global settings*
-    #       `tocNum` in post’s Front Matter
-    #       has a higher priority than here
 
     linkHeadingsToTOC = true
 
@@ -880,9 +780,6 @@ uglyURLs = false
     #       only support absolute URLs
     #       relative to root, e.g.
     #       /videos/meme.mp4
-    #
-    #       and the HTML code you add must
-    #       start with `<video src="`
 
     enableVideoHost = false
 
@@ -940,7 +837,7 @@ uglyURLs = false
     fontFamilyTitle = "'Montserrat', 'Noto Sans Kr', sans-serif"
     # Headings, toc title
     fontFamilyHeadings = "'Montserrat', 'Noto Sans Kr', sans-serif"
-    # Code, superscript, post meta info, post updated badge, post gitinfo, minimal footer, busuanzi site view counter
+    # Code, superscript, post meta info, post updated badge, post gitinfo, minimal footer
     fontFamilyCode = "'Source Code Pro', monospace"
     # Blockquotes
     fontFamilyQuote = ""
@@ -968,17 +865,12 @@ uglyURLs = false
     ######################################
     ## Font Size (unit: px)
 
-    fontSize = 19
-
-    ######################################
-    ## Tab Size
-
-    tabSize = 4
+    fontSize = 20
 
     ######################################
     ## Line Height
 
-    lineHeight = 1.7
+    lineHeight = 1.8
     # Note: apply to post paragraph & toc
     #       only
 
@@ -986,11 +878,6 @@ uglyURLs = false
     ## Paragraph Indents
 
     enableParagraphIndent = true
-
-    indentFirstParagraph = false
-    # Note: *global settings*
-    #       `indentFirstParagraph` in post’s Front Matter
-    #       has a higher priority than here
 
     paragraphStyle = "margin"
     # Note: margin or indent
@@ -1107,30 +994,6 @@ uglyURLs = false
 
 
     ######################################
-    # Post Share
-
-    enablePostShare = false
-
-    displayPostShare = true
-    # Note: *global settings*
-    #       `share` in post’s Front Matter
-    #       has a higher priority than here
-
-    displayShareOnText = false
-
-    shareOnTwitter = true
-    shareOnFacebook = true
-    shareOnLinkedIn = true
-    shareOnTelegram = true
-    shareOnWeibo = true
-    shareOnDouban = true
-    shareOnQQ = true
-    shareOnQzone = true
-
-    shareViaQRCode = true
-
-
-    ######################################
     # Related Posts
 
     enableRelatedPosts = false
@@ -1177,13 +1040,6 @@ uglyURLs = false
     # Minimal Footer
 
     enableMinimalFooter = false
-    enableVerticalBarStructure = false
-    # Note: If you enable this, the
-    #       categories or sections that
-    #       displayed on the right will
-    #       include all top-level
-    #       categories or sections and are
-    #       separated by vertical bar(|).
 
     enableAboutPageMinimalFooter = false
 
@@ -1192,8 +1048,6 @@ uglyURLs = false
     # Back to Top
 
     enableBackToTop = true
-
-    enableBackToTopAutoHide = true
 
     displayBackToTopInHome = true
 
@@ -1204,8 +1058,9 @@ uglyURLs = false
     # Footer
 
     enableFooter = true
-
-    displayFooterInHome = true
+    # Note: homepage layout `poetry`,
+    #       `footage`, and 404 page have
+    #       no footer
 
     displayCopyrightSymbol = true
 
@@ -1226,21 +1081,6 @@ uglyURLs = false
     # Custom Footer (Markdown supported)
     customFooter = ""
 
-    displayBusuanziSiteUVAndPV = false
-    busuanziSiteUVText = "Site UV"
-    busuanziSiteUVIcon = "user"
-    busuanziSitePVText = "Site PV"
-    busuanziSitePVIcon = "eye"
-    # Note: render only in production
-    #       environment
-    #       Leave it empty("") if you
-    #       don’t need the text or icon
-    #       https://busuanzi.ibruce.info/
-
-    # Socials
-    enableSocials = true
-    # Note: see data/Socials.toml
-
 
     ######################################
     # Multilingual
@@ -1256,16 +1096,9 @@ uglyURLs = false
 
 
     ######################################
-    # Code Blocks
+    # Syntax Highlighting
 
     enableHighlight = true
-
-    enableOverflowY = false
-    maxHeight = 30
-    # Unit: em
-
-    enableCopy = false
-    enableCopyAutoHide = false
 
 
     ######################################
@@ -1277,50 +1110,6 @@ uglyURLs = false
 
 
     ######################################
-    # Force HTTPS Redirection
-
-    # Note: render only in production
-    #       environment
-
-    enableForceHTTPS = false
-    # Note: use JavaScript for redirection.
-    #       You can enable this if your
-    #       server does not support forced
-    #       HTTPS.
-
-
-    ######################################
-    # Smooth Scroll
-
-    enableSmoothScroll = true
-    # Note: https://github.com/cferdinandi/smooth-scroll
-
-
-    ######################################
-    # Medium Zoom
-
-    enableMediumZoom = true
-    # Note: https://github.com/francoischalifour/medium-zoom
-
-
-    ######################################
-    # Instant Page
-
-    enableInstantPage = true
-    # Note: https://github.com/instantpage/instant.page
-
-
-    ######################################
-    # Lunr search
-
-    # Note: This requires SearchIndex
-    # output to be enabled.
-
-    enableLunrSearch = true
-    # Note: https://lunrjs.com/
-
-
-    ######################################
     # 404 Page
 
     fofPoster = ""
@@ -1329,3 +1118,17 @@ uglyURLs = false
     fofVideoMp4 = ""
     # Note: you can leave these two
     #       options empty("")
+
+    ######################################
+    # Custom
+    # Social Page url
+    socialGithub = "https://github.com/cube219"
+    socialGitlab = ""
+    socialFacebook = "https://facebook.com/profile.php?id=100001164136339"
+    socialTwitter = ""
+    socialInstagram = "https://www.instagram.com/cube219"
+    socialYoutube = ""
+    socialMedium = ""
+    socialLinkedin = ""
+    socialPinterest = ""
+    socialGoogleplus = ""
