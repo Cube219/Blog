@@ -1,8 +1,8 @@
-[flag]
-other = "🇺🇸"
-
 [ellipsis]
 other = "..."
+
+[colon]
+other = ": "
 
 [minute]
 one = "분"
@@ -20,30 +20,80 @@ other = "Newer"
 [nextPage]
 other = "Older"
 
+[copy]
+other = "복사"
+
+[copied]
+other = "복사됨!"
+
 [copyrightAuthor]
-other = "Author: "
+other = "Author"
 
 [copyrightLink]
-other = "Link: "
+other = "Link"
 
 [copyrightLicense]
-other = "License: "
+other = "License"
+
+[shareOn]
+other = "이 글 공유:"
+
+[shareOnTitle]
+other = "이 글 공유 "
+
+[shareViaTitle]
+other = "공유 "
 
 [relatedPosts]
 other = "관련 글:"
 
 [loadComments]
-other = "Load Comments?"
+other = "댓글을 불러오겠습니까?"
 
 [fofLinkText]
 other = "첫 화면으로"
 
 [serviceWorkerUpdatedText]
-other = "New Update Available"
+other = "새 업데이트 가능"
 
 [serviceWorkerUpdatedAction]
-other = "Refresh"
+other = "새로고침"
 
+[searchResultsTitle]
+one = "“{{ .Term }}” 검색결과: 1개"
+other = "“{{ .Term }}” 검색결과: {{ .Count }}개"
+
+[searchResultsNone]
+other = "“{{ .Term }}” 검색결과: 0개"
+
+# Socials
+
+[twitter]
+other = "Twitter"
+
+[facebook]
+other = "Facebook"
+
+[linkedin]
+other = "LinkedIn"
+
+[telegram]
+other = "Telegram"
+
+[weibo]
+other = "Weibo"
+
+[douban]
+other = "Douban"
+
+[qq]
+other = "QQ"
+
+[qzone]
+other = "Qzone"
+
+[qrcode]
+other = "QR Code"
 
 # Months
 # Used for `i18nMonth`

@@ -40,3 +40,8 @@ a.brand {
 .post-body a {
     text-decoration-color: var(--color-contrast-high);
 }
+
+.copy-button {
+    font-family: $fontFamilyBody;
+    color: var(--color-contrast-high);
+}

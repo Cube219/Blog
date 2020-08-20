@@ -1264,8 +1264,8 @@ uglyURLs = false
     maxHeight = 30
     # Unit: em
 
-    enableCopy = false
-    enableCopyAutoHide = false
+    enableCopy = true
+    enableCopyAutoHide = true
 
 
     ######################################
