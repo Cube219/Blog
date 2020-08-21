@@ -28,19 +28,29 @@ img.article-banner {
     margin-bottom: 3em;
 }
 
+// Customize site brand
 a.brand {
+    // Add color when hovering
     &:hover {
         color: var(--color-primary);
     }
+    // Reduce size in mobile
     @media screen and (max-width: 400px) {
-        font-size: 6vw;
+        font-size: 8vw;
     }
 }
 
+.header-wrapper {
+    padding: 0.15em 0;
+}
+
+
+// Make underline of link more dark
 .post-body a {
     text-decoration-color: var(--color-contrast-high);
 }
 
+// Change the font of copy button text
 .copy-button {
     font-family: $fontFamilyBody;
     color: var(--color-contrast-high);
