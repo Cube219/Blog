@@ -41,7 +41,10 @@ a.brand {
 }
 
 .header-wrapper {
-    padding: 0.15em 0;
+    padding: 0.5em 0;
+    @media screen and (max-width: 500px) {
+        padding: 0.15em 0;
+    }
 }
 
 

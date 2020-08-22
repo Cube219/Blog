@@ -15,10 +15,10 @@ other = "Contents"
 other = "더 보기"
 
 [prevPage]
-other = "Newer"
+other = "다음 페이지"
 
 [nextPage]
-other = "Older"
+other = "이전 페이지"
 
 [copy]
 other = "복사"

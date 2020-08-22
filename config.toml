@@ -282,7 +282,7 @@ uglyURLs = false
     # family can be configured in typography
     # section at the bottom of this file.
     # Unit: em
-    siteBrandFontSize = 1.5
+    siteBrandFontSize = 1.6
     siteBrandFontColor = "var(--color-contrast-high)"
 
 
@@ -728,7 +728,7 @@ uglyURLs = false
     #            supported
 
     # The content width of the post
-    postWidth = 45
+    postWidth = 50
     # Note: you can leave it empty("") to
     #       fallback to the default value: 42
     #       Unit: em
@@ -968,7 +968,7 @@ uglyURLs = false
     ######################################
     ## Font Size (unit: px)
 
-    fontSize = 19
+    fontSize = 17
 
     ######################################
     ## Tab Size
