@@ -4,7 +4,8 @@
 {{- $imgs := slice -}}
 {{- if and .IsPage (in .Site.Params.mainSections .Section) -}}
     {{- if .Params.banner -}}
-        {{- $imgs = union $imgs (slice .Params.banner) -}}
+        {{- $bannerUrl := (printf "%s%s" .Permalink .Params.banner ) -}}
+        {{- $imgs = union $imgs (slice $bannerUrl) -}}
     {{ else }}
         {{- range (findRE `<img src="/?([^"]+)` .Content | uniq) -}}
             {{- $url := replaceRE `<img src="/?([^"]+)` `$1` . -}}
