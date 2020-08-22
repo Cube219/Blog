@@ -416,7 +416,7 @@ uglyURLs = false
     ######################################
     # Tags Page
 
-    enableTagCloud = true
+    enableTagCloud = false
 
     fontUnit = "em"
     largestFontSize = 2.5
@@ -426,7 +426,7 @@ uglyURLs = false
     ######################################
     # List Page
 
-    listWidth = 40
+    listWidth = 45
     # Note: you can leave it empty("") to
     #       fallback to the default value: 42
     #       Unit: em
@@ -728,7 +728,7 @@ uglyURLs = false
     #            supported
 
     # The content width of the post
-    postWidth = 40
+    postWidth = 45
     # Note: you can leave it empty("") to
     #       fallback to the default value: 42
     #       Unit: em
@@ -978,7 +978,7 @@ uglyURLs = false
     ######################################
     ## Line Height
 
-    lineHeight = 1.7
+    lineHeight = 1.9
     # Note: apply to post paragraph & toc
     #       only
 
