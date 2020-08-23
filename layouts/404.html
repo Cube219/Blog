@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}"{{ if and .Site.Params.enableDarkMode .Site.Params.overrideSystemPreferences }}{{ with .Site.Params.defaultTheme | default "light" }} data-theme="{{ . }}"{{ end }}{{ end }}>
+    {{ partial "head.html" . }}
+    <body>
+        <div class="container">
+            {{ partial "header.html" . }}
+            {{ if ne .Site.Params.headerLayout "flex" }}
+                {{ if or (and .IsHome .Site.Params.displayMenuInHome) (and (not .IsHome) .Site.Params.enableMenu) }}
+                    {{ partial "menu.html" . }}
+                {{ end }}
+                {{ partial "components/multilingual.html" . }}
+                {{ partial "components/dark-mode.html" . }}
+            {{ end }}
+            <main class="fof">
+                {{ with or .Site.Params.fofVideoWebm .Site.Params.fofVideoMp4 }}
+                <video poster="{{ $.Site.Params.fofPoster }}" id="bgvid" playsinline autoplay muted loop>
+                    {{ with $.Site.Params.fofVideoWebm }}
+                    <source src="{{ . }}" type="video/webm" />
+                    {{ end }}
+                    {{ with $.Site.Params.fofVideoMp4 }}
+                    <source src="{{ . }}" type="video/mp4" />
+                    {{ end }}
+                </video>
+                {{ end }}
+                <div class="main-inner">
+                    <h1>{{ i18n "pageNotFound" }}</h1>
+                    <div class="fof-footer">
+                        <a href="{{ print `/` | relLangURL }}">{{ i18n "fofLinkText" }}</a>
+                    </div>
+                </div>
+            </main>
+            {{ partial "footer.html" . }}
+        </div>
+        {{ partial "third-party/script.html" . }}
+    </body>
+</html>

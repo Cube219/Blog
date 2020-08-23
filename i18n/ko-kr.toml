@@ -50,6 +50,9 @@ other = "관련 글:"
 [loadComments]
 other = "댓글을 불러오겠습니까?"
 
+[pageNotFound]
+other = "404 - Page not found"
+
 [fofLinkText]
 other = "첫 화면으로"
 

@@ -1329,3 +1329,10 @@ uglyURLs = false
     fofVideoMp4 = ""
     # Note: you can leave these two
     #       options empty("")
+
+
+##### Custom setting #####
+[sitemap]
+    changefreq = "daily"
+    filename = "sitemap.xml"
+    priority = 0.7

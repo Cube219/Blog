@@ -58,3 +58,33 @@ a.brand {
     font-family: $fontFamilyBody;
     color: var(--color-contrast-high);
 }
+
+// Custom 404 page
+.fof .main-inner {
+    background: transparent;
+    z-index: 1;
+}
+
+.fof h1 {
+    color: var(--color-contrast-high);
+
+    @media screen and (max-width: 550px) {
+        font-size: 10vw;
+    }
+}
+
+.fof .fof-footer {
+    bottom: 30%;
+}
+
+.fof a {
+    color: var(--color-contrast-high);
+
+    &:hover {
+        color: var(--color-primary);
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 8vw;
+    }
+}
