@@ -1,5 +1,8 @@
 User-agent: *
 
-Disallow: 404.html
+Disallow: /404.html
+Disallow: /categories/
+Disallow: /page/
+Disallow: /tags/
 
 Sitemap: {{ "sitemap.xml" | absLangURL }}
