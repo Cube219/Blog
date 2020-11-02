@@ -1,6 +1,6 @@
 +++
 title = "About Cube219"
-date = "2020-08-19"
+date = "2020-11-02"
 
 +++
 
@@ -19,7 +19,9 @@ date = "2020-08-19"
 * (2016.07 ~ 2016.12) [SW마에스트로](https://swm.recruiter.co.kr/) 7기 연수생(1단계)
 * (2016) 2016 shake!(경기남부 4개대학 프로그래밍 경시대회) 장려상
 * (2016.12.09 ~ 12.11) [대한민국 게임젬 2016](https://www.facebook.com/kgamejam) 참여
-* (2019) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2019 본선 진출
+* (2019) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2019 본선
+* (2020) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2020 예선 2차
+* (2020) 2020 [ACM-ICPC](http://icpckorea.org/) Seoul Regional Preliminary Contest  56th (css680)
 
 ## 프로젝트
 
