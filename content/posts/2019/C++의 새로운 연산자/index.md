@@ -2,7 +2,7 @@
 title: "C++의 새로운 연산자?"
 slug: "new-operator-in-cpp"
 date: "2019-06-27"
-categories: ["C++"]
+categories: ["Programming", "C++"]
 banner: "images/cover.png"
 description: ""
 tags: []

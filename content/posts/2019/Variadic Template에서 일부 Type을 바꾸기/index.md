@@ -2,7 +2,7 @@
 title: "Variadic Template에서 일부 Parameter Type을 바꾸기"
 slug: "change-some-parameter-types-in-variadic-template"
 date: "2019-05-12"
-categories: ["C++"]
+categories: ["Programming", "C++"]
 banner: ""
 description: ""
 tags: []

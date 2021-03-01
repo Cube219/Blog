@@ -2,7 +2,7 @@
 title: "EASTL SSO(short string optimization)"
 slug: "eastl-sso"
 date: "2019-06-01"
-categories: ["EASTL"]
+categories: ["Programming", "EASTL"]
 banner: ""
 description: ""
 tags: []
