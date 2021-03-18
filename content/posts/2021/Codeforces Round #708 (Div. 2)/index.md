@@ -10,7 +10,7 @@ tags: []
 
 ![결과](images/result.png)
 
-[Codeforces Round #708 (Div. 2)](https://codeforces.com/contest/1496)에 참가했다. 도중에 사이트가 마비되는 이슈가 있었다. m1버전으로 풀고있었는데 결국 unrated되었다. 중간에 조금 헤매서 잘 못봤는데 다행이다. (망할 정수론)
+[Codeforces Round #708 (Div. 2)](https://codeforces.com/contest/1497)에 참가했다. 도중에 사이트가 마비되는 이슈가 있었다. m1버전으로 풀고있었는데 결국 unrated되었다. 중간에 조금 헤매서 잘 못봤는데 다행이다. (망할 정수론)
 
 [전체 Code](https://github.com/Cube219/PS/tree/main/CodeForces/1497%20-%20Codeforces%20Round%20%23708%20(Div.%202))
 
