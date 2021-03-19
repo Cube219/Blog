@@ -31,7 +31,7 @@ enableEmoji = true
 footnoteReturnLinkContents = "↩"
 
 # Enable `.GitInfo` object for each page?
-enableGitInfo = false
+enableGitInfo = true
 
 # Enable generation of `robots.txt` file?
 enableRobotsTXT = true
