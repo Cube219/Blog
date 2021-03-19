@@ -16,7 +16,7 @@ install:
   - cd /home/travis/gopath/src/github.com/Cube219/Blog
 
 git:
-  depth: 1
+  depth: false
 
 notifications:
   email: false
