@@ -58,7 +58,7 @@ uglyURLs = false
 
 # Modified date
 [frontmatter]
-    lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
+    lastmod = [":git", ":fileModTime", ":default"]
 
 # Markdown renderer
 [markup]
