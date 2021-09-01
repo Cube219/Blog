@@ -1,6 +1,6 @@
 +++
 title = "About Cube219"
-date = "2020-11-02"
+date = "2021-09-01"
 
 +++
 
@@ -22,6 +22,7 @@ date = "2020-11-02"
 * (2019) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2019 본선
 * (2020) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2020 예선 2차
 * (2020) 2020 [ACM-ICPC](http://icpckorea.org/) Seoul Regional Preliminary Contest  56th (css680)
+* (2021) [UCPC](https://ucpc.me/) 2021 본선 5등상(11th) (iota24)
 
 ## 프로젝트
 
