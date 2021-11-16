@@ -1,6 +1,6 @@
 +++
 title = "About Cube219"
-date = "2021-09-01"
+date = "2021-11-16"
 
 +++
 
@@ -21,8 +21,11 @@ date = "2021-09-01"
 * (2016.12.09 ~ 12.11) [대한민국 게임젬 2016](https://www.facebook.com/kgamejam) 참여
 * (2019) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2019 본선
 * (2020) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2020 예선 2차
-* (2020) 2020 [ACM-ICPC](http://icpckorea.org/) Seoul Regional Preliminary Contest  56th (css680)
+* (2020) 2020 [ACM-ICPC](http://icpckorea.org/) Seoul Regional Preliminary Contest (56th) (css680)
 * (2021) [UCPC](https://ucpc.me/) 2021 본선 5등상(11th) (iota24)
+* (2021) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2021 본선
+* (2021) 2021 SKKU 프로그래밍 대회 최우수상(5th)
+* (2021) 2021 [ACM-ICPC](http://icpckorea.org/) Seoul Regional 장려상(11th) (iota24)
 
 ## 프로젝트
 
@@ -48,6 +51,11 @@ date = "2021-09-01"
 ## 언어 / 관심 있는 것
 
 ### Main
+
+* PS (Problem Solving)
+  * BOJ (Baekjoon Online Judge) - [max804](https://www.acmicpc.net/user/max804)
+  * Codeforces - [Cube219](https://codeforces.com/profile/Cube219)
+  * AtCoder - [Cube219](https://atcoder.jp/users/Cube219)
 
 * C++
   * STL / C++14, 17
