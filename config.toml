@@ -972,15 +972,15 @@ uglyURLs = false
     #       brand.
 
     # Site brand
-    fontFamilySiteBrand = ""
+    fontFamilySiteBrand = "'Comfortaa'"
     # Menu bar
-    fontFamilyMenu = ""
+    fontFamilyMenu = "'Comfortaa'"
     # Post title, post subtitle, list title, year and month title of the list, related posts title, previous/next post title, header of table, term/name in a definition list
-    fontFamilyTitle = "'Montserrat', 'Noto Sans Kr', sans-serif"
+    fontFamilyTitle = "'Inter', 'Noto Sans Kr', sans-serif"
     # Headings, toc title
-    fontFamilyHeadings = "'Montserrat', 'Noto Sans Kr', sans-serif"
+    fontFamilyHeadings = "'Inter', 'Noto Sans Kr', sans-serif"
     # Code, superscript, post meta info, post updated badge, post gitinfo, minimal footer, busuanzi site view counter
-    fontFamilyCode = "'Source Code Pro', monospace"
+    fontFamilyCode = "'Fira Code', monospace"
     # Blockquotes
     fontFamilyQuote = ""
     # Table of contents
@@ -988,12 +988,12 @@ uglyURLs = false
     # Caption
     fontFamilyCaption = ""
     # Footer
-    fontFamilyFooter = ""
+    fontFamilyFooter = "'Comfortaa'"
     # Body
-    fontFamilyBody = "'Montserrat', 'Noto Sans Kr', sans-serif"
+    fontFamilyBody = "Inter, 'Noto Sans Kr', sans-serif"
 
     # Embed fonts link
-    fontsLink = "https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+KR|Source+Code+Pro:400,400i,700,700i|Comfortaa:700&display=swap"
+    fontsLink = "https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Code:wght@400;700&family=Inter:wght@400;600&family=Noto+Sans+KR&display=swap"
     # Note: In order for the reader to
     #       experience the fonts you set,
     #       it is best to use web fonts.
@@ -1007,7 +1007,7 @@ uglyURLs = false
     ######################################
     ## Font Size (unit: px)
 
-    fontSize = 17
+    fontSize = 18
 
     ######################################
     ## Tab Size
