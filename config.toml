@@ -176,7 +176,7 @@ uglyURLs = false
 
 # The configuration instructions in the
 # menu are as follows:
-# url           URL
+# pageref/url   internal/external URL
 # name          Text (won’t display if it
 #               is left empty("") or does
 #               not exist)
@@ -195,31 +195,31 @@ uglyURLs = false
 [menu]
     ## Menu bar
     [[menu.main]]
-        url = "/"
+        pageref = "/"
         name = "Home"
         weight = 1
         pre = "internal"
         post = "home"
     [[menu.main]]
-        url = "/posts/"
+        pageref = "/posts/"
         name = "Posts"
         weight = 2
         pre = "internal"
         post = "archive"
     [[menu.main]]
-        url = "/categories/"
+        pageref = "/categories/"
         name = "Categories"
         weight = 3
         pre = "internal"
         post = "th"
     # [[menu.main]]
-    #     url = "/tags/"
+    #     pageref = "/tags/"
     #     name = "Tags"
     #     weight = 4
     #     pre = "internal"
     #     post = "tags"
     [[menu.main]]
-        url = "/about/"
+        pageref = "/about/"
         name = "About"
         weight = 5
         pre = "internal"
@@ -245,6 +245,9 @@ uglyURLs = false
     # Header
 
     enableHeader = true
+    
+    enableHeaderAutoHide = false
+    # Note: works for header layout flex only
 
     displayHeaderInHome = true
     # Note: invalid for header layout flex
@@ -595,12 +598,10 @@ uglyURLs = false
     #       environment
 
     enableServiceWorker = false
-    # Note: need third-party support, see
-    #       https://io-oi.me/tech/pwa-via-workbox/
 
 
     ######################################
-    # KaTeX (chemical  equation supported)
+    # KaTeX (chemical equation supported)
 
     enableKaTeX = true
     # Note: *global settings*
@@ -641,6 +642,9 @@ uglyURLs = false
     # Note: *global settings*
     #       `comments` in post’s Front Matter
     #       has a higher priority than here
+    
+    # directly load the comments after pages loaded
+    autoLoadComments = false
 
     ## Disqus
     enableDisqus = false
@@ -675,6 +679,23 @@ uglyURLs = false
     utterancesThemeDark = "photon-dark"
     utterancesLabel = ""
     # Note: https://utteranc.es/
+
+    ## Gitalk
+    enableGitalk = false
+    gitalkClientID = "your_client_id"
+    gitalkClientSecret = "your_client_secret"
+    gitalkRepo = "your_repository"
+    gitalkOwner = "your_gitalk_owner"
+    gitalkAdmin = ["your_gitalk_admin"]
+    gitalkLable = ["Gitalk"]
+    gitalkDistractionFreeMode = false
+    gitalkPerPage = 10
+    gitalkLanguage = "en"
+    gitalkPagerDirection = "last"
+    gitalkCreateIssueManually = false
+    gitalkProxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"
+    gitalkEnableHotKey = true
+    # Note: https://github.com/gitalk/gitalk
 
 
     ######################################
@@ -711,6 +732,16 @@ uglyURLs = false
     ## Ad Units
     enableGoogleAdUnits = false
     googleAdSlot = ""
+
+
+    ######################################
+    # Yandex.Metrika
+    # https://metrika.yandex.ru/
+
+    # Note: render only in production
+    #       environment
+
+    yandexMetrikaId = ""
 
 
     ######################################
@@ -822,6 +853,9 @@ uglyURLs = false
     # Headings Anchor
 
     enableHeadingsAnchor = true
+        # Note: *global settings*
+    #       `anchor` in post’s Front Matter
+    #       has a higher priority than here
 
     # Level range of headings
     headingsOpt = "1-6"
@@ -915,6 +949,11 @@ uglyURLs = false
     #       prefer to add `---` to separate
     #       the content from the footnote
     #       in the Markdown file.
+
+
+    ######################################
+    # Scrollbar
+    customizeScrollbar = false
 
 
     ######################################
@@ -1196,6 +1235,8 @@ uglyURLs = false
     enableBackToTopAutoHide = true
 
     displayBackToTopInHome = true
+    
+    displayBackToTopOnMobile = false
 
     backToTopIcon = "arrow-up"
 
@@ -1205,8 +1246,11 @@ uglyURLs = false
 
     enableFooter = true
 
+    displayFooter = true
+
     displayFooterInHome = true
 
+    displayCopyleftSymbol = false
     displayCopyrightSymbol = true
 
     displaySiteCreatedYear = true
@@ -1275,6 +1319,19 @@ uglyURLs = false
     # Note: valid for CSS and JS generated
     #       by MemE only
 
+    enableFingerprint = true
+
+    enableSRI = false
+    # Note: subresource integrity will
+    #       block MemE CSS and JS on third
+    #       party websites like Google
+    #       Translate. To prevent this,
+    #       your server has to send the
+    #       following header for CSS and
+    #       JS requests:
+    #
+    #       Access-Control-Allow-Origin: *
+
 
     ######################################
     # Force HTTPS Redirection
@@ -1293,7 +1350,6 @@ uglyURLs = false
     # Smooth Scroll
 
     enableSmoothScroll = true
-    # Note: https://github.com/cferdinandi/smooth-scroll
 
 
     ######################################
@@ -1314,10 +1370,28 @@ uglyURLs = false
     # Lunr search
 
     # Note: This requires SearchIndex
-    # output to be enabled.
+    #       output to be enabled.
 
     enableLunrSearch = true
     # Note: https://lunrjs.com/
+
+
+    ######################################
+    # Algolia search
+
+    # Note: This requires Algolia
+    #       output to be enabled.
+    #       And you need to upload the
+    #       generated algolia.json to
+    #       Algolia every time you rebuild
+    #       your site.
+
+    enableAlgoliaSearch = false
+
+    algoliaAppId = ""
+    algoliaApiKey = ""
+    algoliaIndexName = ""
+    # Note: https://www.algolia.com/
 
 
     ######################################
