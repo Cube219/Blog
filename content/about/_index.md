@@ -1,8 +1,7 @@
-+++
-title = "About Cube219"
-date = "2021-11-16"
-
-+++
+---
+title: "About Cube219"
+date: "2022-02-02T22:18:34+09:00"
+---
 
 게임 개발자 (특히 게임 엔진/그래픽스쪽)가 되고 싶은 사람입니다.
 
@@ -10,23 +9,23 @@ date = "2021-11-16"
 
 ## 학력
 
-* (2013 ~ 2015) [한국디지털미디어고등학교](https://www.dimigo.hs.kr/) 졸업
 * (2016 ~ ) [성균관대학교](https://skku.edu/) 컴퓨터공학과 재학(군대 끝!)
+* (2013 ~ 2015) [한국디지털미디어고등학교](https://www.dimigo.hs.kr/) 졸업
 
 ## 활동/경험
 
-* (2012) 제 29회 한국정보올림피아드(KOI) 전국대회 은상
-* (2016.07 ~ 2016.12) [SW마에스트로](https://swm.recruiter.co.kr/) 7기 연수생(1단계)
-* (2016) 2016 shake!(경기남부 4개대학 프로그래밍 경시대회) 장려상
-* (2016.12.09 ~ 12.11) [대한민국 게임젬 2016](https://www.facebook.com/kgamejam) 참여
-* (2019) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2019 본선
-* (2020) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2020 예선 2차
-* (2020) 2020 [ACM-ICPC](http://icpckorea.org/) Seoul Regional Preliminary Contest (56th) (css680)
-* (2021) [UCPC](https://ucpc.me/) 2021 본선 5등상(11th) (iota24)
-* (2021) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2021 본선
-* (2021) 2021 SKKU 프로그래밍 대회 최우수상(5th)
-* (2021) 2021 [ACM-ICPC](http://icpckorea.org/) Seoul Regional 장려상(11th) (iota24)
 * (2022) 2021 [shake!(경인지역 6개대학 연합 프로그래밍 경시대회)](http://shake.codes/) 1st
+* (2021) 2021 [ACM-ICPC](http://icpckorea.org/) Seoul Regional 장려상(11th) (iota24)
+* (2021) 2021 SKKU 프로그래밍 대회 최우수상(5th)
+* (2021) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2021 본선
+* (2021) [UCPC](https://ucpc.me/) 2021 본선 5등상(11th) (iota24)
+* (2020) 2020 [ACM-ICPC](http://icpckorea.org/) Seoul Regional Preliminary Contest (56th) (css680)
+* (2020) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2020 예선 2차
+* (2019) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2019 본선
+* (2016.12.09 ~ 12.11) [대한민국 게임젬 2016](https://www.facebook.com/kgamejam) 참여
+* (2016) 2016 shake!(경기남부 4개대학 프로그래밍 경시대회) 장려상
+* (2016.07 ~ 2016.12) [SW마에스트로](https://swm.recruiter.co.kr/) 7기 연수생(1단계)
+* (2012) 제 29회 한국정보올림피아드(KOI) 전국대회 은상
 
 ## 프로젝트
 
