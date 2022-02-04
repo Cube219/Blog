@@ -83,7 +83,7 @@ tags: []
 
 [소스코드 (BOJ 23576 - Stock Price Prediction)](https://github.com/Cube219/PS/blob/main/BOJ/23000~24000/23576%20-%20Stock%20Price%20Prediction(WithoutSegTree).cpp)
 
-[소스코드 (BOJ 0298 - 파인애플 피자)](https://github.com/Cube219/PS/blob/main/BOJ/20000~21000/20298%20-%20%ED%8C%8C%EC%9D%B8%EC%95%A0%ED%94%8C%20%ED%94%BC%EC%9E%90(WithoutSegTree).cpp)
+[소스코드 (BOJ 20298 - 파인애플 피자)](https://github.com/Cube219/PS/blob/main/BOJ/20000~21000/20298%20-%20%ED%8C%8C%EC%9D%B8%EC%95%A0%ED%94%8C%20%ED%94%BC%EC%9E%90(WithoutSegTree).cpp)
 
 -----
 
