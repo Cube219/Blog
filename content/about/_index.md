@@ -14,7 +14,7 @@ date: "2022-02-02T22:18:34+09:00"
 
 ## 활동/경험
 
-* (2022) 2021 [shake!(경인지역 6개대학 연합 프로그래밍 경시대회)](http://shake.codes/) 1st
+* (2022) 2021 [shake!(경인지역 6개대학 연합 프로그래밍 경시대회)](http://shake.codes/) 대상(1st)
 * (2021) 2021 [ACM-ICPC](http://icpckorea.org/) Seoul Regional 장려상(11th) (iota24)
 * (2021) 2021 SKKU 프로그래밍 대회 최우수상(5th)
 * (2021) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2021 본선
