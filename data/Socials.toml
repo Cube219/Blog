@@ -20,15 +20,22 @@
     weight = 3
 
 [[socials]]
+    id = "twitter"
+	url = "https://twitter.com/_Cube219"
+	icon = "twitter"
+	title = "Twitter"
+	weight = 4
+
+[[socials]]
     id = "rss"
     url = "/rss.xml"
     icon = "rss"
     title = "RSS"
-    weight = 4
+    weight = 5
 
 [[socials]]
     id = "email"
     url = "mailto:max804800@gmail.com"
     icon = "envelope"
     title = "Email"
-    weight = 5
+    weight = 6
