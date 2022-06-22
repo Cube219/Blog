@@ -1,6 +1,6 @@
 ---
 title: "About Cube219"
-date: "2022-02-02T22:18:34+09:00"
+date: "2022-06-22T20:43:22+09:00"
 ---
 
 게임 개발자 (특히 게임 엔진/그래픽스쪽)가 되고 싶은 사람입니다.
@@ -14,6 +14,7 @@ date: "2022-02-02T22:18:34+09:00"
 
 ## 활동/경험
 
+* (2022) [Google Code Jam](https://codingcompetitions.withgoogle.com/codejam) 2022 Round 3 (300th)
 * (2022) 2021 [shake!(경인지역 6개대학 연합 프로그래밍 경시대회)](http://shake.codes/) 대상(1st)
 * (2021) 2021 [ACM-ICPC](http://icpckorea.org/) Seoul Regional 장려상(11th) (iota24)
 * (2021) 2021 SKKU 프로그래밍 대회 최우수상(5th)
