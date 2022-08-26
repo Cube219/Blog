@@ -1,6 +1,6 @@
 ---
 title: "About Cube219"
-date: "2022-06-22T20:43:22+09:00"
+date: "2022-08-26T14:08:22+09:00"
 ---
 
 게임 개발자 (특히 게임 엔진/그래픽스쪽)가 되고 싶은 사람입니다.
@@ -9,12 +9,14 @@ date: "2022-06-22T20:43:22+09:00"
 
 ## 학력
 
-* (2016 ~ ) [성균관대학교](https://skku.edu/) 컴퓨터공학과 재학(군대 끝!)
+* (2016 ~ ) [성균관대학교](https://skku.edu/) 컴퓨터공학과 재학
 * (2013 ~ 2015) [한국디지털미디어고등학교](https://www.dimigo.hs.kr/) 졸업
 
 ## 활동/경험
 
-* (2022) [Google Code Jam](https://codingcompetitions.withgoogle.com/codejam) 2022 Round 3 (300th)
+* (2022) [UCPC](https://ucpc.me/) 2022 본선(22nd) (공군정보체계관리단)
+* (2022) [`22 현대모비스 알고리즘 경진대회](https://hyundaimobis.goorm.io/) 장려상(42th)
+* (2022) [Google Code Jam](https://codingcompetitions.withgoogle.com/codejam) 2022 Round 3(300th)
 * (2022) 2021 [shake!(경인지역 6개대학 연합 프로그래밍 경시대회)](http://shake.codes/) 대상(1st)
 * (2021) 2021 [ACM-ICPC](http://icpckorea.org/) Seoul Regional 장려상(11th) (iota24)
 * (2021) 2021 SKKU 프로그래밍 대회 최우수상(5th)
@@ -57,7 +59,6 @@ date: "2022-06-22T20:43:22+09:00"
   * BOJ (Baekjoon Online Judge) - [max804](https://www.acmicpc.net/user/max804)
   * Codeforces - [Cube219](https://codeforces.com/profile/Cube219)
   * AtCoder - [Cube219](https://atcoder.jp/users/Cube219)
-
 * C++
   * STL / C++14, 17
   * [Type traits](https://en.cppreference.com/w/cpp/header/type_traits) / [Template Meta Programming](https://en.wikipedia.org/wiki/Template_metaprogramming)
