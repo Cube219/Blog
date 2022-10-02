@@ -1,12 +1,13 @@
 ---
 title: "활동/경험 - 전체"
-date: "2022-08-26T14:08:22+09:00"
+date: "2022-10-03T02:51:38+09:00"
 ---
 
 ## 2022
 
+* (2022) [SCPC(Samsung Collegiate Programming Cup)](https://research.samsung.com/scpc) 2022 본선
 * (2022) [UCPC](https://ucpc.me/) 2022 본선(22nd) (공군정보체계관리단)
-* (2022) [`22 현대모비스 알고리즘 경진대회](https://hyundaimobis.goorm.io/) 장려상(42th)
+* (2022) [`22 현대모비스 알고리즘 경진대회](https://hyundai-mobis.goorm.io) 장려상(42th)
 * (2022) [Google Code Jam](https://codingcompetitions.withgoogle.com/codejam) 2022 Round 3(300th)
 * (2022) 2021 [shake!(경인지역 6개대학 연합 프로그래밍 경시대회)](http://shake.codes/) 대상(1st)
 
