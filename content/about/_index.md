@@ -7,6 +7,11 @@ date: "2022-10-03T02:51:38+09:00"
 
 -----
 
+## Contact
+
+* max804800@gmail.com
+* cube219@proton.me - [PGP Public Key](publickey.cube219@proton.me-9ed35fec108ee6c980efdea0368dfe8df0e6b123.asc)
+
 ## 학력
 
 * (2016 ~ ) [성균관대학교](https://skku.edu/) 컴퓨터공학과 재학
