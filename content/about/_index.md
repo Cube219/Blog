@@ -12,10 +12,11 @@ date: "2022-10-03T02:51:38+09:00"
 * max804800@gmail.com
 * cube219@proton.me - [PGP Public Key](publickey.cube219@proton.me-9ed35fec108ee6c980efdea0368dfe8df0e6b123.asc)
 
-## 학력
+## 경력/학력
 
-* (2016 ~ ) [성균관대학교](https://skku.edu/) 컴퓨터공학과 재학
-* (2013 ~ 2015) [한국디지털미디어고등학교](https://www.dimigo.hs.kr/) 졸업
+* (2022-12 ~ ) [넥슨게임즈](https://www.nexongames.co.kr/) 재직
+* (2016-03 ~ 2023-02) [성균관대학교](https://skku.edu/) 컴퓨터공학과 졸업
+* (2013-03 ~ 2016-02) [한국디지털미디어고등학교](https://www.dimigo.hs.kr/) 졸업
 
 ## 활동/경험
 
