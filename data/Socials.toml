@@ -6,36 +6,43 @@
     weight = 1
 
 [[socials]]
+    id = "linkedin"
+    url = "https://www.linkedin.com/in/cube219/"
+    icon = "linkedin"
+    title = "LinkedIn"
+    weight = 2
+
+[[socials]]
     id = "facebook"
     url = "https://facebook.com/profile.php?id=100001164136339"
     icon = "facebook"
     title = "Facebook"
-    weight = 2
+    weight = 3
 
 [[socials]]
     id = "instagram"
     url = "https://www.instagram.com/cube219"
     icon = "instagram"
     title = "Instagram"
-    weight = 3
+    weight = 4
 
 [[socials]]
     id = "twitter"
 	url = "https://twitter.com/_Cube219"
 	icon = "twitter"
 	title = "Twitter"
-	weight = 4
+	weight = 5
 
 [[socials]]
     id = "rss"
     url = "/rss.xml"
     icon = "rss"
     title = "RSS"
-    weight = 5
+    weight = 6
 
 [[socials]]
     id = "email"
     url = "mailto:max804800@gmail.com"
     icon = "envelope"
     title = "Email"
-    weight = 6
+    weight = 7
