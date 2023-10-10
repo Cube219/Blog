@@ -10,7 +10,7 @@ date: "2022-10-03T02:51:38+09:00"
 ## Contact
 
 * max804800@gmail.com
-* cube219@proton.me - [PGP Public Key](publickey.cube219@proton.me-9ed35fec108ee6c980efdea0368dfe8df0e6b123.asc)
+* cube219@proton.me
 
 ## 경력/학력
 
