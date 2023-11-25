@@ -713,12 +713,12 @@ uglyURLs = false
     # Note: render only in production
     #       environment
 
-    enableGoogleAnalytics = true
+    enableGoogleAnalytics = false
 
     trackingCodeType = "gtag"
     # Note: gtag or analytics
 
-    trackingID = "UA-154144484-1"
+    trackingID = ""
 
 
     ######################################
