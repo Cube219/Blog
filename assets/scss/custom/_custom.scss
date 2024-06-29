@@ -48,9 +48,18 @@ a.brand {
 }
 
 
-// Make underline of link more dark
+// Using border-bottom instead of underline because of external icon
 .post-body a {
-    text-decoration-color: var(--color-contrast-high);
+    text-decoration: none;
+    border-bottom: .1rem solid var(--color-primary);
+}
+.post-body a .external-icon {
+    display: inline;
+    vertical-align: baseline;
+    width: .75em;
+    height: .75em;
+    margin-left: .1rem;
+    margin-right: .1rem;
 }
 
 // Change the font of copy button text
