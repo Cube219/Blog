@@ -10,6 +10,7 @@ date: "2024-06-29T17:47:45+09:00"
 ## Contact
 
 * max804800@gmail.com
+* cube219@mailbox.org
 * cube219@proton.me
 
 ## 경력/학력
