@@ -13,20 +13,6 @@
     weight = 2
 
 [[socials]]
-    id = "facebook"
-    url = "https://facebook.com/profile.php?id=100001164136339"
-    icon = "facebook"
-    title = "Facebook"
-    weight = 3
-
-[[socials]]
-    id = "instagram"
-    url = "https://www.instagram.com/cube219"
-    icon = "instagram"
-    title = "Instagram"
-    weight = 4
-
-[[socials]]
     id = "twitter"
 	url = "https://twitter.com/_Cube219"
 	icon = "twitter"

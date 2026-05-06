@@ -1,23 +1,25 @@
 ---
 title: "About Cube219"
-date: "2024-06-29T17:47:45+09:00"
+date: "2026-05-06T20:07:31+09:00"
 ---
 
-게임 기술에 관심이 많은 사람입니다.
+기술에 관심이 많고 알아가는 것을 좋아하는 사람입니다.
+
+Game Engine, Graphics, Low-Level, 최적화에 관심이 많습니다.
 
 -----
 
 ## Contact
 
-* max804800@gmail.com
 * cube219@mailbox.org
-* cube219@proton.me
+* max804800@gmail.com
 
 ## 경력/학력
 
-* (2022-12 ~ ) [넥슨게임즈](https://www.nexongames.co.kr/) 재직 (Engine Programmer)
-* (2016-03 ~ 2023-02) [성균관대학교](https://skku.edu/) 컴퓨터공학과 졸업
-* (2013-03 ~ 2016-02) [한국디지털미디어고등학교](https://www.dimigo.hs.kr/) 졸업
+* (2022.12 ~ ) [넥슨게임즈](https://www.nexongames.co.kr/) 재직 (Engine Programmer)
+  * (2022.12 ~ ) [The First Descendant](https://tfd.nexon.com/)
+* (2016.03 ~ 2023.02) [성균관대학교](https://skku.edu/) 컴퓨터공학과 졸업
+* (2013.03 ~ 2016.02) [한국디지털미디어고등학교](https://www.dimigo.hs.kr/) 졸업
 
 ## 활동/경험
 
@@ -37,7 +39,17 @@ date: "2024-06-29T17:47:45+09:00"
 
 ## 프로젝트
 
-* [CubeEngine](https://github.com/Cube219/CubeEngine) (일시 중단)
+* [CubeEngine](https://github.com/Cube219/CubeEngine)
+  * 간단한 실시간 렌더링 엔진
+  * 렌더링과 그래픽스 API를 공부하고, 향후 최신 그래픽스 API나 기술들이 나올 때 빠르게 적용해 보는 용도
+  * 주요 기능
+    * Multi-Platform (Windows - DirectX 12 / MacOS - Metal)
+    * Render Graph를 통한 리소스 추적 및 Transition 자동화
+    * Bindless Resources / 이름 기반 Shader Parameter 자동 Binding
+    * PBR + IBL 렌더링
+    * 그래픽스 디버깅 기능 (Runtime Shader Recompilation, Texture Viewer)
+    * SIMD 기반 Vector / Matrix 연산 (SSE, AVX2, NEON)
+* [CubeEngine_old](https://github.com/Cube219/CubeEngine_old) (일시 중단)
   * 모듈화를 지향하는 게임 엔진
   * 물리, 소리 등 주요 기능들을 모듈화 하고, 쉽게 붙혔다 땠다 할 수 있음
   * [Vulkan](https://www.khronos.org/vulkan/)기반으로 개발중이며, 차후 다른 그래픽스 API도 지원 예정
@@ -63,20 +75,20 @@ date: "2024-06-29T17:47:45+09:00"
 * Game Engine
   * [Unreal Engine](https://www.unrealengine.com)
   * [Unity3d](https://unity3d.com/unity)
-  * Engine-level modification / optimization
+  * Engine-Level Modification / Optimization
 * Computer Graphics
-  * Real-time rendering
-  * 사실적인 렌더링을 위한 여러 기법들
+  * Real-time Rendering
   * PBR
   * Ray Tracing
-  * GPU optimization
+  * GPU Optimization
 * C++
   * C++14, 17, 20
-  * CPU optimization
+  * CPU Optimization
 * Graphics API
-  * DirectX 11 / 12
+  * DirectX 12
   * Vulkan
-  * GLSL / HLSL
+  * Metal
+  * HLSL / GLSL / Slang
 * PS (Problem Solving)
   * BOJ (Baekjoon Online Judge) - [max804](https://www.acmicpc.net/user/max804)
     * Solved.ac - [max804](https://solved.ac/profile/max804)
