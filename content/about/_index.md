@@ -16,8 +16,9 @@ Game Engine, Graphics, Low-Level, 최적화에 관심이 많습니다.
 
 ## 경력/학력
 
-* (2022.12 ~ ) [넥슨게임즈](https://www.nexongames.co.kr/) 재직 (Engine Programmer)
-  * (2022.12 ~ ) [The First Descendant](https://tfd.nexon.com/)
+* (2026.07 ~ ) [스마일게이트](https://www.smilegate.com/) (Engine Programmer)
+* (2022.12 ~ 2026.07) [넥슨게임즈](https://www.nexongames.co.kr/) (Engine Programmer)
+  * (2022.12 ~ 2026.07) [The First Descendant](https://tfd.nexon.com/)
 * (2016.03 ~ 2023.02) [성균관대학교](https://skku.edu/) 컴퓨터공학과 졸업
 * (2013.03 ~ 2016.02) [한국디지털미디어고등학교](https://www.dimigo.hs.kr/) 졸업
 
